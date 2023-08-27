@@ -1,0 +1,66 @@
+.counter .count-up,
+    .counter .title,
+    .logo-slider .title,
+    .our-serivces .title {
+        text-align: center
+    }
+    .counter {
+        padding: 70px 0;
+        background-color:#222222
+    }
+
+    .counter .title {
+        color: white;
+        margin-bottom: 50px;
+        font-size: 30px;
+    }
+
+    .counter .counter-inside {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center
+    }
+
+    .counter .count-up {
+        width: 25%
+    }
+
+    .counter .count-up .counter-count {
+        font-weight: 600;
+        color: white;
+        font-size: 40px;
+        letter-spacing: 1px;
+        /* font-family: var(--second-font) */
+    }
+
+    #NewsLetterFormResponse,
+    .counter .count-up .counter-text,
+    .newsletter button.subcribe {
+        font-family: var(--primary-font);
+        letter-spacing: 1px
+    }
+
+    .counter .count-up .counter-text {
+        font-size: 19px;
+        font-weight: 500;
+        color: white
+    }
+    #count1,#count2,#count3,#count4{
+     border: 1px solid rgb(240, 237, 237);
+     border-radius: 20%;
+     margin: 0px 6px 10px 6px;
+     color: rgb(241, 209, 167);
+    }
+    @media only screen and (max-width:575px) {
+        
+    
+    .counter .count-up {
+        width: 50%;
+        margin-bottom: 20px
+    }
+    }
+    @media only screen and (max-width:575px) {
+    .counter .count-up {
+        width: 100%
+    }
+}

@@ -1,0 +1,100 @@
+.our-serivces-main,
+.updates .updates-main {
+    display: flex;
+    gap: 15px;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin: 25px 0
+}
+.our-serivces .title {
+    text-align: center
+}
+.serivces-images {
+    margin-bottom: 20px;
+    height: 70%
+}
+
+.serivces-images img {
+    object-fit: contain;
+    max-height: 250px
+}
+.serivces-content .title {
+    font-size: 22px !important;
+    text-align: left
+}
+.services-btn,
+.top-header-inside {
+    display: flex;
+    justify-content: space-between
+}
+.text-link {
+    transition: .5s;
+    color: var(--second-color);
+    font-weight: 500;
+    font-size: 17px;
+    padding: 5px 0
+}
+
+.text-link:hover {
+    color: var(--primary-font);
+    padding-left: 25px
+}
+
+.text-link:after {
+    width: 0;
+    height: 3px;
+    border-radius: 10px;
+    display: block;
+    top: 50%
+}
+
+.footer-links .navbar-nav .nav-item .nav-link:hover:after,
+.text-link:hover:after {
+    width: 20px
+}
+.text-link{
+    width: 100%;
+    position: relative;
+    display: block;
+}
+.btn:after,
+.text-link:after {
+    position: absolute;
+    background-color: var(--primary-color);
+    left: 0;
+    content: '';
+    transition: .5s
+}
+button.share-btn {
+    cursor: pointer;
+    background: 0 0;
+    border: none;
+    outline: 0;
+    padding: 0 10px
+}
+
+button.share-btn svg {
+    fill: var(--primary-color);
+    width: 15px
+}
+.title,
+button.share-btn {
+    color: #222222;
+}
+@media only screen and (max-width:600px) {
+.our-serivces-items,
+.updates .updates-main .updates-items {
+    width: 44%
+}
+}
+@media only screen and (max-width:600px) {
+
+    .our-serivces-items,
+    .updates .updates-main .updates-items {
+        width: 90%
+    }
+    .serivces-images,
+    .updates-images {
+        height: auto
+    }
+}

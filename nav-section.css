@@ -1,0 +1,246 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    background-color: #f1f1f1;
+  }
+  
+  .toggle {
+    font-size: 30px;
+    color: white;
+    float:right;
+    line-height: 45px;
+    margin-right: 5%;
+    /* margin-left: 62%; */
+    /* margin-right: 0%; */
+    cursor: pointer;
+    display: none;
+  }
+  
+  nav {
+    background: #222222;
+    height: 47px;
+    width: 100%;
+    font-family: sans-serif;
+    position: sticky;
+    /* display: flex;
+    justify-content: space-evenly; */
+  }
+  .logo{
+    margin-top: .5em;
+    margin-left: .8em;
+    padding: 2px;
+    background-color: white;
+  }
+  ul {
+    float: left;
+    margin-left: 15%;
+  }
+  
+  .socialtop {
+    float: right;
+    margin-right: 2%;
+    /* display: block; */
+  }
+  
+  ul li {
+    margin: 0;
+    padding: 0;
+    position: relative;
+    display: inline-block;
+    font-size: 16px;
+  }
+  
+  ul a {
+    font-weight: 400;
+    padding: 15px;
+    line-height: 45px;
+    color: #fff;
+    text-decoration: none;
+  }
+  
+  ul li:first-child {
+    background: #FF7D00;
+  }
+  
+  ul li:hover {
+    background: #FF7D00;
+    color: #fff;
+  }
+  
+  ul li a:hover {
+    color: #fff;
+  }
+  
+  .top-social a {
+    color: #fff;
+    padding: 15px 13px 13px 13px;
+    
+    /* border: 1px solid pink; */
+  }
+  
+  .top-social {
+    padding: 10px 15px;
+  }
+  
+  .top-social a:hover {
+    color: #FF7D00;
+  }
+  svg {
+    cursor: pointer;
+    /* background-color: white; */
+    /* transform: rotate(90deg); */
+    fill: white;
+    width: 30px;
+    height: 22px;
+    padding: 0.1px 3.5px;
+} 
+.dropdown-toggle img{
+  width: 20px;
+    color: white;
+    background: white;
+    padding: 1px;
+    margin-left: -10px;
+    margin-right: 5px;
+    border-radius: 20%;
+}
+.dropdown-menu{
+     
+  z-index: 2;
+  margin-top: -15px;
+  position: fixed;
+  top: -400px;
+  right: 0;
+  left: 0;
+  width: 200px;
+  background: #222222;
+  display: inline-block;
+  transition: top .2s;
+  margin-left: 27.8em;
+}
+.dropdown-menu.show{
+  top: 60px;
+}
+
+@media screen and (max-width: 931px) {
+  .dropdown-menu.show{
+    top: 180px;
+  }
+  .dropdown-menu {
+    z-index: 1;
+    margin-top: 10px;
+    position: fixed;
+    top: -400px;
+    right: 0;
+    left: 0;
+    width: 200px;
+    background: #222222;
+    display: inline-block;
+    transition: top .01s;
+    margin-left: 0;
+  }
+  .dropdown-menu a{
+   position: static;
+    top: 0;
+    width: 100%;
+    float: right;
+    text-align: center;
+  }
+  .dropdown-menu{
+      width: 100%;
+    }
+    .toggle {
+      display: block;
+    }
+    .socialtop{
+        
+      z-index: 0;
+      margin-top: -15px;
+      position: fixed;
+      top: -400px;
+      right: 0;
+      left: 0;
+      width: 200px;
+      background: #222222;
+      display: inline-block;
+      transition: top .4s;
+      margin-left: 0;
+      
+    }
+    .activity {
+      z-index: 1;
+      margin-top: -15px;
+      position: fixed;
+      top: -400px;
+      right: 0;
+      left: 0;
+      width: 200px;
+      background: #222222;
+      display: inline-block;
+      transition: top .4s;
+      margin-left: 0;
+    }
+    
+    .activity.show{
+      top: 60px;
+    }
+    .socialtop.show{
+       top: 320px;
+    }
+    
+    .activity li, .top-social{
+      top: 0;
+      width: 100%;
+      float: right;
+      text-align: center;
+    }
+    .activity, .socialtop{
+        width: 100%;
+      }
+
+   
+  } 
+
+  @media (min-width: 932px) and (max-width: 1260px) {
+    .toggle {
+        display: block;
+      }
+    .socialtop{
+        /* display: none; */
+        /* float: none; */
+        
+      z-index: 1;
+      margin-top: -15px;
+      position: fixed;
+      top: -400px;
+      right: 0;
+      left: 0;
+      width: 200px;
+      background: #222222;
+      display: inline-block;
+      transition: top .4s;
+      margin-left: 0;
+    }
+    .socialtop.show{
+        top: 60px;
+        /* margin-right: 0%; */
+        
+     }
+     .top-social a{
+        top: 0;
+        width: 100%;
+        float: right;
+        text-align: center;
+      }
+    .socialtop{
+          width: 8%;
+          margin-left: 90%;
+          margin-right: 2%;
+        }
+ }
+  
+  

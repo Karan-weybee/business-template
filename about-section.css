@@ -1,0 +1,32 @@
+.about-us.container {
+    max-width: 1170px;
+    margin: 0 auto;
+    padding: 0 15px
+}
+.about-us-inside {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between
+}
+.about-us-content,
+    .about-us-img {
+        flex: 1 1
+    }
+
+    .about-us-img {
+        margin: 15px;
+    }
+    .about-us-content{
+        margin: 15px;
+    }
+     .title {
+        font-size: 20px;
+        /* font-weight: 500; */
+        margin-bottom: 10px
+    }
+@media (max-width:768px) {
+    .about-us-content,
+        .about-us-img {
+            flex: auto
+        }
+}
