@@ -5,12 +5,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="service-section.css">
     <link rel="stylesheet" href="counter-section.css">
     <link href="nav-section.css" rel="stylesheet">
     <link rel="stylesheet" href="about-section.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="slider-section.css">
+    <link rel="stylesheet" href="service-section.css">
+    <link rel="stylesheet" href="newsletter-section.css">
     <!-- <script type="module" src="slider-section.js"></script> -->
 </head>
 
@@ -318,12 +319,12 @@
                 <div class="modal-dialog" role="document">
                     <div class="modal-content">
                         <div class="modal-body">
-                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <!-- <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                                 <span aria-hidden="true">&times;</span>
-                            </button>
-                            <h5 class="title">Share this on:</h5>
+                            </button> -->
+                            <!-- <h5 class="title">Share this on:</h5> -->
 
-                            <div class="social-media">
+                            <!-- <div class="social-media">
                                 <ul>
                                     <li>
                                         <a href="#" itemprop="facebook" aria-label="facebook" rel="noreferrer"
@@ -386,7 +387,7 @@
                                             </svg>
                                         </a></li>
                                 </ul>
-                            </div>
+                            </div> -->
                         </div>
                     </div>
                 </div>
@@ -394,7 +395,24 @@
         </div>
     </div>
     <!-- Our-Services End -->
-    
+     <!-- News Letter Here -->
+     <div class="newsletter">
+        <div class="container">
+            <div class="newsletter-inside">
+                <h3 class="title">Subscribe Our Newsletter</h3>
+                <form method="post" id="newsletter-form">
+                    <div class="form-row">
+                        <input type="text" name="Email" id="newsletter-email-input" placeholder="Enter Your Email Here"
+                            class="form-control" required="*">
+                        <button type="submit" class="subcribe" name="submit">Subscribe Now</button>
+                    </div>
+
+                </form>
+            </div>
+            <div id="NewsLetterFormResponse"></div>
+        </div>
+    </div>
+    <!-- News Letter End -->
     
     
     
@@ -428,7 +446,31 @@
             
         });
     </script>
-    
+    <script type="text/javascript"
+    src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+<script type="text/javascript" src="js/main.min.js"></script>
+
+<script>
+    const thisForm = document.getElementById('newsletter-form');
+    thisForm.addEventListener('submit', async function (e) {
+        e.preventDefault();
+        var email = document.getElementById("email-input").value;
+        var formData = {
+            Id: 0,
+            emailAddress: email,
+            templateId: "{{TemplateId}}",
+            userId: "{{UserId}}"
+        };
+        const response = await fetch('https://api.socialsparsh.staging.weybee.in/WCMS/NewsletterSubscriber', {
+            method: 'POST',
+            headers: { 'Content-Type': 'application/json' },
+            body: JSON.stringify((formData))
+        });
+
+        const result = await response.json();
+    });
+</script>
+
 
 </body>
 

@@ -2,12 +2,17 @@
 .updates .updates-main {
     display: flex;
     gap: 15px;
-    justify-content: center;
+    justify-content: space-around;
     flex-wrap: wrap;
-    margin: 25px 0
+    margin: 25px 0;
+
 }
 .our-serivces .title {
     text-align: center
+}
+.spad .container .title{
+    margin-top: 1em;
+    font-size: 32px;
 }
 .serivces-images {
     margin-bottom: 20px;
@@ -29,14 +34,14 @@
 }
 .text-link {
     transition: .5s;
-    color: var(--second-color);
+    color: #222222;
     font-weight: 500;
     font-size: 17px;
     padding: 5px 0
 }
 
 .text-link:hover {
-    color: var(--primary-font);
+    color: #222222;
     padding-left: 25px
 }
 
@@ -60,7 +65,7 @@
 .btn:after,
 .text-link:after {
     position: absolute;
-    background-color: var(--primary-color);
+    background-color: #222222;
     left: 0;
     content: '';
     transition: .5s
@@ -74,17 +79,27 @@ button.share-btn {
 }
 
 button.share-btn svg {
-    fill: var(--primary-color);
-    width: 15px
+    fill: #222222;
+    width: 25px
 }
 .title,
 button.share-btn {
     color: #222222;
 }
-@media only screen and (max-width:600px) {
+.our-serivces-items{
+    border: 1px solid #222222;
+    box-shadow: 10px 11px 10px #222222;
+    padding: 20px;
+    width: 27%;
+}
+@media only screen and (max-width:742px) {
 .our-serivces-items,
 .updates .updates-main .updates-items {
-    width: 44%
+    width: 90%
+}
+.serivces-images,
+.updates-images {
+    height: auto
 }
 }
 @media only screen and (max-width:600px) {
