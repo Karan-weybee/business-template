@@ -32,7 +32,7 @@
 }
 .newsletter {
     background-color: #222222;
-    padding: 50px 0
+    padding: 50px 0;
 }
 
 .newsletter-inside {
@@ -45,15 +45,15 @@
     justify-content: center;
 
 }
-.newsletter .title {
+.newsletter-inside .title {
     color:white;
     width: 40%;
-    margin: 0;
+    margin: 0px;
     font-size: 30px;
-    letter-spacing: 1px
+    letter-spacing: 1px;
 }
 
-.newsletter form {
+.newsletter-inside form {
     width: 60%
 }
 
@@ -105,12 +105,16 @@
 #NewsLetterFormResponse .alert-danger {
     color: #e60303
 }
-.newsletter-inside {
+.newsletter-inside{
     display: flex;
     flex-wrap: wrap;
-    align-items: center
+    align-items: center;
 }
-
+.newsletter .container{
+    max-width: 1170px;
+    margin: 0 auto;
+    padding: 0 0px;
+}
 @media only screen and (max-width:1024px) {
     .newsletter .title,
     .newsletter form {
@@ -122,6 +126,9 @@
         justify-content: center;
         margin-top: 20px
     }
+    .newsletter .container{
+        width: 90%;
+     }
 }
 #NewsLetterFormResponse,
 .counter .count-up .counter-text,

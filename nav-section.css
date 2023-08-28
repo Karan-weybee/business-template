@@ -42,6 +42,7 @@
   }
   
   .socialtop {
+    z-index: 2;
     float: right;
     margin-right: 2%;
     /* display: block; */

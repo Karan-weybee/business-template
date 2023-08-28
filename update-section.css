@@ -18,14 +18,21 @@
     flex-wrap: wrap;
     margin: 25px 0
 }
-
+.updates .container{
+        max-width: 1170px;
+        margin: 0 auto;
+        padding: 0 15px;
+    
+}
 .updates .updates-main .updates-items {
+    z-index: -1;
     width: 32%;
     background-color: white;
     height: 100%
 }
 
 .updates-content {
+    z-index: 0;
     position: relative;
     padding: 15px;
     background-color: #938c8c
