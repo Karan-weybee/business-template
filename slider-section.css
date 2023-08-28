@@ -17,8 +17,8 @@
     /* display:none; */
     animation-name: fade;
     /* animation-duration: 1s; */
-    
-  transition: all 0.4s ease-in;
+
+    transition: all 0.4s ease-in;
 
 }
 
@@ -37,9 +37,11 @@
     font-size: 3em;
     line-height: 1.5em;
 }
-.slide p{
+
+.slide p {
     font-size: 1.5em;
 }
+
 img {
     width: 100%;
 }
@@ -57,21 +59,14 @@ img {
 .controls {
     z-index: 2;
     position: absolute;
-    top: 50%;
+    top: 37%;
     transform: translateY(-50%);
     font-size: 1.5em;
     padding: 15px 10px;
     border-radius: 5px;
+    background: none;
+    border: 1px;
 
-}
-
-.controls:hover {
-    background: white;
-    transition: 0.3s;
-}
-
-.controls:active {
-    color: grey;
 }
 
 #left-arrow {
@@ -90,10 +85,12 @@ img {
 .active {
     background: crimson;
 }
+
 #slider {
     z-index: -1;
     /* display: none; */
 }
+
 @media (min-width: 932px) and (max-width: 1260px) {
     #slider {
         z-index: -1;

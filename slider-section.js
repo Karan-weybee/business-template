@@ -1,5 +1,5 @@
 var slides = document.querySelectorAll(".slide");
-var dots = document.querySelectorAll(".dot");
+// var dots = document.querySelectorAll(".dot");
 var index = 0;
 
 console.log("slider active")
@@ -42,4 +42,4 @@ function changeSlide(){
 
 }
 
-setInterval(nextSlide,2000)
+setInterval(nextSlide,3000)

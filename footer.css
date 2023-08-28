@@ -1,32 +1,35 @@
 .main-footer {
     padding: 70px 0;
-    background-color: #f2f2f2
+    background-color: #222222;
 }
 .container {
+    
     max-width: 1170px;
     margin: 0 auto;
     padding: 0 15px
 }
 .footer-inside {
+    
     display: flex;
     justify-content: space-between;
     gap: 15px;
     flex-wrap: wrap
 }
 .footer-items {
-    border: 1px solid black;
     width: 30%
 }
 .footer-items .title {
+    color: white;
     font-size: 28px
 }
 .footer-items .decs {
+    color: white;
     margin: 1rem 0;
-    color: #000;
     font-size: 20px;
 }
 .footer-logo img {
     width: auto;
+    background-color: white;
     max-width: 300px;
     max-height: 90px
 }
@@ -47,25 +50,35 @@
     }
     
     
-
+.footer-social ul li:hover{
+    background-color: #000;
+}
 .footer-social ul li a {
-    display: block
+    display: block;
+    position: relative;
+    color: white;
 }
 
 .footer-social ul li a svg {
-    fill: white;
+    fill: black;
+    position: absolute;
+    left: 0;
+    top: 4px;
 }
 .footer-links .navbar-nav .nav-item .nav-link:hover:after,
     .text-link:hover:after {
-        width: 20px;
+        width: 100%;
     }
+
 .footer-links .navbar-nav .nav-item {
     position: relative;
-    padding: 8px 0
+    left: 0;
+    padding: 12px 0
 }
 
 .footer-links .navbar-nav .nav-item .nav-link {
-    color: #000
+    color: white;
+    font-size: 20px;
 }
 
 .footer-links .navbar-nav .nav-item .nav-link:after {
@@ -73,18 +86,67 @@
     height: 3px;
     border-radius: 10px;
     display: block;
-    top: 50%;
+    top: 70%;
     position: absolute;
-    background-color: var(--primary-color);
+    background-color: #222222;
     transition: .5s;
     left: 0;
     content: ''
 }
 .footer-links .navbar-nav .nav-item .nav-link:hover {
-    padding-left: 25px;
-    color: var(--second-color)
+    /* padding-left: 25px; */
+    color: rgb(241, 209, 167)
 }
 
+.footer-links .navbar-nav{
+    margin-top: 1em;
+ float: left;
+ margin-left: 10%;
+}
+.footer-links{
+    display: flex;
+    justify-content: space-between;
+}
+.contact-info .contact-items {
+    display: flex;
+    margin: 15px 0;
+    width: 100%;
+    gap: 0 15px
+}
+.contact-info .contact-items a {
+    display: block;
+    margin-top: 3px;
+    color: white;
+    font-weight: 500;
+    font-size: 18px;
+    letter-spacing: 1px
+}
+
+.contact-info .contact-items span {
+    font-weight: 500;
+    color:white;
+    line-height: 1.7;
+    font-family: var(--primary-font)
+}
+.contact-icon {
+    flex-shrink: 0;
+    display: block;
+    position: relative;
+}
+
+.contact-icon svg {
+    position: absolute;
+    top: 5px;
+    left: 2px;
+    width: 27px;
+    fill: black
+}
+contact-info .contact-items span {
+    font-size: 20px;
+    color: #000;
+    line-height: 2;
+    font-family: var(--primary-font);
+}
 @media only screen and (max-width:575px) {
 
     .main-footer {
