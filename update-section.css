@@ -1,0 +1,145 @@
+.copy-right img,
+.hide {
+    display: none
+}
+
+.updates-content:hover:after {
+    width: 100%
+}
+
+.updates-content:after {
+    background-color: #EBCCA3
+}
+
+.updates .updates-main {
+    display: flex;
+    gap: 15px;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin: 25px 0
+}
+
+.updates .updates-main .updates-items {
+    width: 32%;
+    background-color: white;
+    height: 100%
+}
+
+.updates-content {
+    position: relative;
+    padding: 15px;
+    background-color: #938c8c
+}
+
+.updates-date-share {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px
+}
+
+.updates-content .date {
+    color: #222222;
+    font-size: 15px;
+    font-weight: 600;
+    font-family: var(--second-font)
+}
+
+.updates-content .title {
+    font-size: 22px;
+    font-weight: 500;
+    color: #EBCCA3
+}
+
+.updates-content:after {
+    content: '';
+    width: 0%;
+    height: 3px;
+    display: block;
+    bottom: 0;
+    position: absolute;
+    left: 0;
+    transition: .5s
+}
+
+.btn {
+    width: fit-content;
+    cursor: pointer;
+    border: 0;
+    z-index: 1;
+    border-radius: 0;
+    font-size: 18px;
+    letter-spacing: 1px;
+    margin-top: 15px;
+    padding: 10px 45px
+}
+
+.btn:hover:after,
+.text-link,
+.updates-content:hover:after {
+    width: 100%
+}
+
+.btn,
+.btn:hover {
+    color: white
+}
+
+.btn:after {
+    width: 3%;
+    height: 100%;
+    z-index: -1;
+    top: 0
+}
+
+.updates .btn {
+    margin: 40px auto 0
+}
+
+.updates-images {
+    height: 70%
+}
+
+.updates-images img {
+    aspect-ratio: 1.1;
+    max-height: 373px;
+    object-fit: cover
+}
+
+button.share-btn {
+    cursor: pointer;
+    background: 0 0;
+    border: none;
+    outline: 0;
+    padding: 0 10px
+}
+
+button.share-btn svg {
+    fill: #222222;
+    width: 25px
+}
+
+.title,
+button.share-btn {
+    color: #222222
+}
+
+@media only screen and (max-width:991px) {
+
+    .our-serivces-items,
+    .updates .updates-main .updates-items {
+        width: 44%
+    }
+}
+
+@media only screen and (max-width:600px) {
+
+    .our-serivces-items,
+    .updates .updates-main .updates-items {
+        width: 90%
+    }
+
+    .serivces-images,
+    .updates-images {
+        height: auto
+    }
+}
