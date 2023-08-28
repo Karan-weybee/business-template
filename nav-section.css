@@ -115,12 +115,12 @@
   position: fixed;
   top: -400px;
   right: 0;
-  left: 0;
+  left: 34em;
   width: 200px;
   background: #222222;
   display: inline-block;
   transition: top .2s;
-  margin-left: 27.8em;
+  
 }
 .dropdown-menu.show{
   top: 60px;
@@ -205,9 +205,19 @@
    
   } 
 
+
   @media (min-width: 932px) and (max-width: 1327px) {
+
     .toggle {
         display: block;
+      }
+      .dropdown-menu{
+        position: fixed;
+        top: -400px;
+        right: 0;
+        left: 31em;
+       
+        
       }
     .socialtop{
         /* display: none; */

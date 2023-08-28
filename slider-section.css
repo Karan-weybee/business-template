@@ -16,7 +16,9 @@
     width: 100%;
     /* display:none; */
     animation-name: fade;
-    animation-duration: 1s;
+    /* animation-duration: 1s; */
+    
+  transition: all 0.4s ease-in;
 
 }
 
