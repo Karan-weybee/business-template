@@ -1,0 +1,18 @@
+.banner-area,
+    .btn:after,
+    .text-link:after {
+        background-color: var(--primary-color)
+    }
+
+    .banner-content .title {
+        color: var(--white);
+        text-align: center;
+        line-height: 1.5;
+        padding: 75px 0
+    }
+
+.banner-area .container {
+    max-width: 1170px;
+    margin: 0 auto;
+    padding: 0 15px
+}

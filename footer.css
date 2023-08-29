@@ -35,11 +35,11 @@
 }
 .contact-icon,
     .footer-social ul li a {
-        width: 30px;
+        width: 43px;
         transition: .5s;
         background-color: var(--second-color);
         border-radius: 50%;
-        height: 30px
+        height: 43px
     }
 
  .footer-social ul {
@@ -64,8 +64,8 @@
 .footer-social ul li a svg {
     fill: black;
     position: absolute;
-    left: 0;
-    top: 4px;
+    left: 5px;
+    top: 9px;
 }
 .footer-links .navbar-nav .nav-item .nav-link:hover:after,
     .text-link:hover:after {
@@ -138,8 +138,8 @@
 
 .contact-icon svg {
     position: absolute;
-    top: 5px;
-    left: 2px;
+    top: 11px;
+    left: 8px;
     width: 27px;
     fill: black
 }

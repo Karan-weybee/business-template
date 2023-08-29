@@ -97,7 +97,7 @@ a.btn{
 .btn:hover {
     color: var(--white);
     /* background-color: #938C8C; */
-    transition-duration: .2s;
+    transition-duration: .5s;
 }
 .btn:after {
     border-radius: 12px;
@@ -108,9 +108,6 @@ a.btn{
     top: 0
 }
 
-.updates .btn {
-    /* margin: 40px auto 0 */
-}
 
 .updates-images {
     height: 70%
