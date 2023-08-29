@@ -8,14 +8,25 @@
     <link rel="stylesheet" href="counter-section.css">
     <link href="nav-section.css" rel="stylesheet">
     <link rel="stylesheet" href="about-section.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="slider-section.css">
     <link rel="stylesheet" href="service-section.css">
     <link rel="stylesheet" href="newsletter-section.css">
     <link rel="stylesheet" href="update-section.css">
     <link rel="stylesheet" href="logo-slider.css">
     <link rel="stylesheet" href="footer.css">
+    <link rel="stylesheet" href="copy-right.css">
     <style>
+        :root {
+            --primary-color: #222222;
+            --second-color: rgb(241, 209, 167);
+            --nav-hover-color: #FF7D00;
+            --white: #ffffff;
+            --dark: #506172;
+            --bgcolor: #f6f9fe;
+            --primary-font: 'Rubik', sans-serif;
+            --second-font: 'Sarabun', sans-serif;
+        }
+
         * {
             margin: 0;
             padding: 0;
@@ -23,12 +34,25 @@
         }
 
         body {
-            background-color: white;
+            background-color: var(--bgcolor);
         }
     </style>
+    
+    <link rel="stylesheet" href="backtotop.css">
 </head>
 
 <body onresize="myFunction()">
+     <!-- Back to Top -->
+
+     <a href="#" id="button1">
+        <svg xmlns="http://www.w3.org/2000/svg" id="Layer_1" enable-background="new 0 0 128 128" viewBox="0 0 128 128">
+            <path id="Left_Arrow_4_"
+                d="m84 108c-1.023 0-2.047-.391-2.828-1.172l-40-40c-1.563-1.563-1.563-4.094 0-5.656l40-40c1.563-1.563 4.094-1.563 5.656 0s1.563 4.094 0 5.656l-37.172 37.172 37.172 37.172c1.563 1.563 1.563 4.094 0 5.656-.781.781-1.805 1.172-2.828 1.172z">
+            </path>
+        </svg>
+    </a>
+
+    <!-- Back to Top End -->
 
     <!-- nav  -->
     <nav>
@@ -99,13 +123,14 @@
             </div>
         </div>
         <label class="toggle">
-            <i class="fa fa-bars"></i>
+            <svg id="" enable-background="new 0 0 464.205 464.205" height="512" viewBox="0 0 464.205 464.205" width="512" xmlns="http://www.w3.org/2000/svg"><g><g id="grip-solid-horizontal_1_"><path d="m435.192 406.18h-406.179c-16.024 0-29.013-12.99-29.013-29.013s12.989-29.013 29.013-29.013h406.18c16.023 0 29.013 12.99 29.013 29.013-.001 16.023-12.99 29.013-29.014 29.013z"/><path d="m435.192 261.115h-406.179c-16.024 0-29.013-12.989-29.013-29.012s12.989-29.013 29.013-29.013h406.18c16.023 0 29.013 12.989 29.013 29.013s-12.99 29.012-29.014 29.012z"/><path d="m435.192 116.051h-406.179c-16.024 0-29.013-12.989-29.013-29.013s12.989-29.013 29.013-29.013h406.18c16.023 0 29.013 12.989 29.013 29.013s-12.99 29.013-29.014 29.013z"/></g></g></svg>
+
         </label>
     </nav>
     <!-- /nav  -->
-       <!-- Main Slider Here-->
+    <!-- Main Slider Here-->
 
-     <div id="slider">
+    <div id="slider">
         <div class="slide" style="background:dodgerBlue;">
             <img src="https://img.fotocommunity.com/peacefull-95e65145-d050-4957-9ddc-85dd60689d45.jpg?height=500">
             <div class="container slider-content">
@@ -148,11 +173,11 @@
             </div>
         </div>
 
+        <!--Controlling arrows-->
+        <!-- <button class="controls" onclick="prevSlide()" id="left-arrow"><img src="./images/prev.webp" alt=""></button>
+        <button class="controls" onclick="prevSlide()" id="right-arrow"><img src="./images/next.webp" alt=""></button> -->
     </div>
-    <!--Controlling arrows-->
-    <button class="controls" onclick="prevSlide()" id="left-arrow"><img src="./images/prev.webp" alt=""></button>
-    <button class="controls" onclick="prevSlide()" id="right-arrow"><img src="./images/next.webp" alt=""></button>
-        
+
     <!-- <div id="dots-con">
         <span class="dot"></span><span class="dot"></span><span class="dot"></span><span class="dot"></span>
     </div> -->
@@ -229,7 +254,8 @@
             <div class="our-serivces-main">
                 <div class="our-serivces-items" itemscope="" itemtype="http://schema.org/Product">
                     <div class="serivces-images">
-                        <img src="images/serivces.webp" alt="Social-Parsh" width="321px" height="214px" itemprop="image">
+                        <img src="images/serivces.webp" alt="Social-Parsh" width="321px" height="214px"
+                            itemprop="image">
                     </div>
                     <div class="serivces-content">
                         <h3 class="title" itemprop="brand">Lorem Ipsum Dolor Sit</h3>
@@ -261,7 +287,8 @@
                 </div>
                 <div class="our-serivces-items" itemscope="" itemtype="http://schema.org/Product">
                     <div class="serivces-images">
-                        <img src="images/serivces.webp" alt="Social-Parsh" width="321px" height="214px" itemprop="image">
+                        <img src="images/serivces.webp" alt="Social-Parsh" width="321px" height="214px"
+                            itemprop="image">
                     </div>
                     <div class="serivces-content">
                         <h3 class="title" itemprop="brand">Lorem Ipsum Dolor Sit</h3>
@@ -293,7 +320,8 @@
                 </div>
                 <div class="our-serivces-items" itemscope="" itemtype="http://schema.org/Product">
                     <div class="serivces-images">
-                        <img src="images/serivces.webp" alt="Social-Parsh" width="321px" height="214px" itemprop="image">
+                        <img src="images/serivces.webp" alt="Social-Parsh" width="321px" height="214px"
+                            itemprop="image">
                     </div>
                     <div class="serivces-content">
                         <h3 class="title" itemprop="brand">Lorem Ipsum Dolor Sit</h3>
@@ -675,19 +703,19 @@
             <div class="logo-slider-inner">
                 <div class="logo-slider-items"><img src="images/gallery.webp" alt="Cinque Terre"
                         style="width: 250px; height: 250px;"></div>
-                <div class="logo-slider-items"><img src="images/gallery.webp" alt="Cinque Terre"
+                <div class="logo-slider-items"><img src="images/blog.webp" alt="Cinque Terre"
                         style="width: 250px; height: 250px;"></div>
                 <div class="logo-slider-items"><img src="images/gallery.webp" alt="Cinque Terre"
                         style="width: 250px; height: 250px;"></div>
-                <div class="logo-slider-items"><img src="images/gallery.webp" alt="Cinque Terre"
+                <div class="logo-slider-items"><img src="images/blog.webp" alt="Cinque Terre"
                         style="width: 250px; height: 250px;"></div>
                 <div class="logo-slider-items"><img src="images/gallery.webp" alt="Cinque Terre"
                         style="width: 250px; height: 250px;"></div>
-                <div class="logo-slider-items"><img src="images/gallery.webp" alt="Cinque Terre"
+                <div class="logo-slider-items"><img src="images/blog.webp" alt="Cinque Terre"
                         style="width: 250px; height: 250px;"></div>
                 <div class="logo-slider-items"><img src="images/gallery.webp" alt="Cinque Terre"
                         style="width: 250px; height: 250px;"></div>
-                <div class="logo-slider-items"><img src="images/gallery.webp" alt="Cinque Terre"
+                <div class="logo-slider-items"><img src="images/blog.webp" alt="Cinque Terre"
                         style="width: 250px; height: 250px;"></div>
                 <div class="logo-slider-items"><img src="images/gallery.webp" alt="Cinque Terre"
                         style="width: 250px; height: 250px;"></div>
@@ -698,8 +726,8 @@
     <br><br>
 
     <!--Logo Slider sections-end-->
-     <!-- Main Footer Here-->
-     <footer class="main-footer">
+    <!-- Main Footer Here-->
+    <footer class="main-footer">
         <div class="container">
             <div class="footer-inside">
                 <div class="footer-items">
@@ -863,6 +891,53 @@
     <!-- Main Footer End-->
 
 
+    <!--Copy Right Sections-->
+    <div class="copy-right">
+        <div class="container">
+            <div class="translate" id="google_translate_element"></div>
+            <span class="copy-right-item">Copyright © 2023 Lorem Ipsum All rights reserved.</span>
+            <span class="copy-right-item">Powered by <a href="https://socialsparsh.com/" target="_blank"
+                    rel="noreferrer">Social Sparsh</a></span>
+        </div>
+    </div>
+    <!--Copy Right Sections-end-->
+
+
+    <script type="text/javascript"
+        src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+    <script type="text/javascript" src="js/main.min.js"></script>
+
+    <script>
+        const thisForm1 = document.getElementById('newsletter-form');
+        thisForm1.addEventListener('submit', async function (e) {
+            e.preventDefault();
+            var email = document.getElementById("email-input").value;
+            var formData = {
+                Id: 0,
+                emailAddress: email,
+                templateId: "{{TemplateId}}",
+                userId: "{{UserId}}"
+            };
+            const response = await fetch('https://api.socialsparsh.staging.weybee.in/WCMS/NewsletterSubscriber', {
+                method: 'POST',
+                headers: { 'Content-Type': 'application/json' },
+                body: JSON.stringify((formData))
+            });
+
+            const result = await response.json();
+        });
+    </script>
+
+    <script type="text/javascript">
+        function googleTranslateElementInit() {
+            new google.translate.TranslateElement({
+                pageLanguage: 'en',
+                includedLanguages: 'en,es,hi,ja,zh-CN', layout:
+                    google.translate.TranslateElement.InlineLayout.SIMPLE
+            },
+                'google_translate_element');
+        }
+    </script>
 
     <script src="counter-section.js"></script>
     <script src="slider-section.js"></script>
@@ -877,7 +952,7 @@
             }
         }
 
-        $('.toggle i').click(function () {
+        $('.toggle svg').click(function () {
             $('ul').toggleClass("show");
             v = v == 0 ? 1 : 0;
             if (v == 0 && w <= 932) {

@@ -3,23 +3,31 @@
     z-index: -1;
     background-color: #333;
     display: flex;
-    /* overflow: auto; */
+    
     overflow-x: scroll;
     white-space: nowrap;
     padding: 10px;
-    background-color: white;
+    background-color: var(--white);
    
   }
   
 .logo-slider-inner .logo-slider-items {
     padding: 10px;
     z-index: 0;
+    transition: 0.5s ease-out;
+    background-position: 0 0;
+    animation: moveSlideshow 5s linear infinite;
   }
   .logo-slider .title{
     font-size: 22px;
-    background-color: white;
+    background-color: var(--white);
   }
  .container-fluid{
     position: relative;
-    z-index: -1;
+    /* z-index: -1; */
  }
+ @keyframes moveSlideshow {
+  100% { 
+    transform: translateX(-80.6666%);  
+  }
+}

@@ -4,14 +4,14 @@
     justify-content: center;
     /* justify-content: space-around; */
     flex-wrap: wrap;
-    margin: 50px 0;
+    margin: 50px 0 100px 0;
 
 }
 .our-serivces .title {
     text-align: center
 }
-.spad .container .title{
-    margin-top: 1em;
+.our-serivces .container .title{
+    margin-top: 2em;
     font-size: 32px;
 }
 .serivces-images {
@@ -34,14 +34,14 @@
 }
 .text-link {
     transition: .5s;
-    color: #222222;
+    color: var(--primary-color);
     font-weight: 500;
     font-size: 17px;
     padding: 5px 0
 }
 
 .text-link:hover {
-    color: #222222;
+    color: var(--primary-color);
     padding-left: 25px
 }
 
@@ -65,7 +65,7 @@
 .btn:after,
 .text-link:after {
     position: absolute;
-    background-color: #222222;
+    background-color: var(--primary-color);
     left: 0;
     content: '';
     transition: .5s
@@ -79,16 +79,16 @@ button.share-btn {
 }
 
 button.share-btn svg {
-    fill: #222222;
+    fill: var(--primary-color);
     width: 25px
 }
 .title,
 button.share-btn {
-    color: #222222;
+    color: var(--primary-color);
 }
 .our-serivces-items{
-    border: 1px solid #222222;
-    box-shadow: 10px 11px 10px #222222;
+    border: 1px solid var(--primary-color);
+    box-shadow: 10px 11px 10px var(--primary-color);
     padding: 15px;
     /* width: 27%; */
 }

@@ -6,7 +6,7 @@
     }
     .counter {
         padding: 70px 0;
-        background-color:#222222;
+        background-color:var(--primary-color);
       
     }
     .counter .container{
@@ -17,7 +17,7 @@
     }
 
     .counter .title {
-        color: white;
+        color: var(--white);
         margin-bottom: 50px;
         font-size: 30px;
     }
@@ -39,7 +39,7 @@
 
     .counter .count-up .counter-count {
         font-weight: 600;
-        color: white;
+        color: var(--white);
         font-size: 40px;
         letter-spacing: 1px;
         /* font-family: var(--second-font) */
@@ -55,13 +55,13 @@
     .counter .count-up .counter-text {
         font-size: 19px;
         font-weight: 500;
-        color: white
+        color: var(--white)
     }
     #count1,#count2,#count3,#count4{
      /* border: 1px solid rgb(240, 237, 237); */
      /* border-radius: 20%; */
      /* margin: 0px 6px 10px 6px; */
-     color: rgb(241, 209, 167);
+     color: var(--second-color);
      
     }
     /* .counter .container{

@@ -5,13 +5,10 @@
     box-sizing: border-box;
   }
   
-  body {
-    background-color: #f1f1f1;
-  }
-  
+
   .toggle {
     font-size: 30px;
-    color: white;
+    color: var(--white);
     float:right;
     line-height: 45px;
     margin-right: 5%;
@@ -22,11 +19,13 @@
   }
   
   nav {
-    background: #222222;
+    background: var(--primary-color);
     height: 47px;
     width: 100%;
     font-family: sans-serif;
-    position: sticky;
+    /* position: sticky; */
+    position: fixed;
+    z-index: 2;
     /* display: flex;
     justify-content: space-evenly; */
   }
@@ -34,7 +33,7 @@
     margin-top: .5em;
     margin-left: .8em;
     padding: 2px;
-    background-color: white;
+    background-color: var(--white);
   }
   ul {
     float: left;
@@ -42,7 +41,6 @@
   }
   
   .socialtop {
-    z-index: 2;
     float: right;
     margin-right: 2%;
     /* display: block; */
@@ -65,11 +63,11 @@
   }
   
   ul li:first-child {
-    background: #FF7D00;
+    background: var(--nav-hover-color);
   }
   
   ul li:hover {
-    background: #FF7D00;
+    background: var(--nav-hover-color);
     color: #fff;
   }
   
@@ -89,21 +87,21 @@
   }
   
   .top-social a:hover {
-    color: #FF7D00;
+    color: var(--nav-hover-color);
   }
   svg {
     cursor: pointer;
     /* background-color: white; */
     /* transform: rotate(90deg); */
-    fill: white;
+    fill: var(--white);
     width: 30px;
     height: 22px;
     padding: 0.1px 3.5px;
 } 
 .dropdown-toggle img{
   width: 20px;
-    color: white;
-    background: white;
+    color: var(--white);
+    background: var(--white);
     padding: 1px;
     margin-left: -10px;
     margin-right: 5px;
@@ -118,7 +116,7 @@
   right: 0;
   left: 34em;
   width: 200px;
-  background: #222222;
+  background: var(--primary-color);
   display: inline-block;
   transition: top .2s;
   
@@ -139,7 +137,7 @@
     right: 0;
     left: 0;
     width: 200px;
-    background: #222222;
+    background: var(--primary-color);
     display: inline-block;
     transition: top .01s;
     margin-left: 0;
@@ -166,7 +164,7 @@
       right: 0;
       left: 0;
       width: 200px;
-      background: #222222;
+      background: var(--primary-color);
       display: inline-block;
       transition: top .4s;
       margin-left: 0;
@@ -180,7 +178,7 @@
       right: 0;
       left: 0;
       width: 200px;
-      background: #222222;
+      background: var(--primary-color);
       display: inline-block;
       transition: top .4s;
       margin-left: 0;
@@ -231,7 +229,7 @@
       right: 0;
       left: 0;
       width: 200px;
-      background: #222222;
+      background: var(--primary-color);
       display: inline-block;
       transition: top .4s;
       margin-left: 0;

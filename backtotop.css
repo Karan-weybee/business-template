@@ -1,0 +1,36 @@
+#button1 {
+    /* visibility: hidden */
+}
+
+#button1 {
+    background-color:var(--second-color)
+}
+#button1 {
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    transition: var(--second-color) .3s, opacity .5s, visibility .5s;
+    /* opacity: 0; */
+    z-index: 1000
+}
+
+#button1.show {
+    opacity: 1;
+    visibility: visible
+}
+
+#button1 svg {
+    cursor: pointer;
+    transform: rotate(90deg);
+    fill: var(--white);
+    width: 35px;
+    height: 35px;
+    padding: 0 1px 3.5px
+}
+#button1:hover {
+    background-color: var(--primary-color)
+}

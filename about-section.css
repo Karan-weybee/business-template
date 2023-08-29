@@ -16,6 +16,9 @@
     width: 100%;
     height: auto;
 }
+.about-us-content .title{
+    margin-top: 0%;
+}
 .about-us-content,
     .about-us-img {
         flex: 1 1;

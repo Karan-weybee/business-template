@@ -2,13 +2,15 @@
 .hide {
     display: none
 }
-
+.updates{
+    margin: 100px 0 50px 0;
+}
 .updates-content:hover:after {
     width: 100%
 }
 
 .updates-content:after {
-    background-color: #EBCCA3
+    background-color: var(--second-color);
 }
 
 .updates .updates-main {
@@ -27,7 +29,7 @@
 .updates .updates-main .updates-items {
     z-index: -1;
     width: 32%;
-    background-color: white;
+    background-color: var(--white);
     height: 100%
 }
 
@@ -45,7 +47,7 @@
 }
 
 .updates-content .date {
-    color: #222222;
+    color: var(--primary-color);
     font-size: 15px;
     font-weight: 600;
     font-family: var(--second-font)
@@ -54,7 +56,7 @@
 .updates-content .title {
     font-size: 22px;
     font-weight: 500;
-    color: #EBCCA3
+    color: var(--second-color)
 }
 
 .updates-content:after {
@@ -71,9 +73,9 @@
 .btn {
     width: fit-content;
     cursor: pointer;
-    border: 1px solid #EBCCA3;
-    background-color: #EBCCA3;
-    color: #222222;
+    border: 1px solid var(--second-color);
+    background-color: var(--second-color);
+    color: var(--primary-color);
     z-index: 1;
     border-radius: 0;
     font-size: 18px;
@@ -93,7 +95,7 @@ a.btn{
 
 
 .btn:hover {
-    color: white;
+    color: var(--white);
     /* background-color: #938C8C; */
     transition-duration: .2s;
 }
@@ -129,13 +131,13 @@ button.share-btn {
 }
 
 button.share-btn svg {
-    fill: #222222;
+    fill: var(--primary-color);
     width: 25px
 }
 
 .title,
 button.share-btn {
-    color: #222222
+    color: var(--primary-color)
 }
 #update-btns{
     display: flex;
