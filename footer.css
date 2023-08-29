@@ -64,8 +64,8 @@
 .footer-social ul li a svg {
     fill: black;
     position: absolute;
-    left: 5px;
-    top: 9px;
+    left: 6px;
+    top: 10px;
 }
 .footer-links .navbar-nav .nav-item .nav-link:hover:after,
     .text-link:hover:after {
