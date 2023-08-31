@@ -4,16 +4,22 @@
         background-color: var(--primary-color)
     }
 
+
     .banner-content .title {
-        color: var(--white);
+        color: #222222;
         text-align: center;
         line-height: 1.5;
         padding: 75px 0;
         font-size: 35px;
     }
 
-
+    .banner-area {
+       
+        border-radius: 20px;
+    }
 .banner-area .container {
+    border: 3px solid var(--primary-color);
+    background-color:var(--bgcolor);
     max-width: 1170px;
     margin: 0 auto;
     padding: 0 15px

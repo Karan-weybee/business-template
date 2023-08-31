@@ -152,6 +152,7 @@
         flex-wrap: wrap
     }
 }
+
 @media only screen and (max-width:600px) {
 
     .newsletter .form-row .form-control,
@@ -200,6 +201,10 @@
     padding: 0 20px;
   }
   
+  .subscription .submit-email:hover{
+    background-color: #4ABEBB;
+    color: white;
+  }
   .subscription .submit-email {
     position: absolute;
     top: 0;
@@ -212,7 +217,7 @@
     margin: 1px;
     padding: 0 20px;
     cursor: pointer;
-    background: #4ABEBB;
+    background: red;
     color: #FFFFFF;
     transition: width .35s ease-in-out,
       background .35s ease-in-out;
@@ -251,3 +256,17 @@
     visibility: visible;
     opacity: 1;
   }
+  @media only screen and (max-width:323px) {
+       
+  }
+  @media only screen and (max-width:369px) {
+    .content1 {
+        width: 90%;
+        text-align: left;
+        /* display: none; */
+    }
+    .newsletter{
+        width: 100%;
+        /* display: none; */
+    }
+}
