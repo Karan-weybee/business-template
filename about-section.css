@@ -3,8 +3,9 @@
 }
 .about-us .container {
     max-width: 1170px;
-    margin: 0 auto;
-    padding: 0 15px
+    margin: 50px auto;
+    padding: 0 15px;
+
 }
 .about-us-inside {
     display: flex;
@@ -12,9 +13,13 @@
     gap: 30px;
     justify-content: space-between;
 }
+.about-us-img img:hover{
+    box-shadow: 0px 0px 25px #222222;
+}
 .about-us-img img{
     width: 100%;
     height: auto;
+    border-radius: 20px;
 }
 .about-us-content .title{
     margin-top: 0%;
@@ -30,6 +35,7 @@
     }
     .about-us-content{
         margin: 15px;
+        font-size: 12px;
     }
      .title {
         font-size: 20px;
