@@ -16,6 +16,7 @@
     font-family: var(--primary-font);
     letter-spacing: 1px
 }
+
 #NewsLetterFormResponse {
     text-align: center;
     margin-top: 15px;
@@ -30,8 +31,10 @@
 #NewsLetterFormResponse .alert-danger {
     color: #e60303
 }
+
 .newsletter {
     background-image: url("images/wall2.webp");
+    background-size: cover;
     background-color: var(--primary-color);
     padding: 50px 0;
     border-bottom-left-radius: 65px;
@@ -39,6 +42,7 @@
     position: relative;
     /* opacity: .2; */
 }
+
 /* .container2{
     z-index: 1;
     border-radius: 14px;
@@ -51,14 +55,16 @@
     flex-wrap: wrap;
     align-items: center
 }
-.newsletter-inside h3{
+
+.newsletter-inside h3 {
     display: flex;
     justify-content: center;
     position: relative;
 
 }
+
 .newsletter-inside .title {
-    color:var(--white);
+    color: var(--white);
     width: 40%;
     /* margin-bottom: 50px; */
     font-size: 30px;
@@ -100,7 +106,7 @@
 
 .newsletter button.subcribe:hover {
     background-color: red;
-    color:var(--white)
+    color: var(--white)
 }
 
 #NewsLetterFormResponse {
@@ -117,12 +123,14 @@
 #NewsLetterFormResponse .alert-danger {
     color: #e60303
 }
-.newsletter-inside{
+
+.newsletter-inside {
     display: flex;
     flex-wrap: wrap;
     align-items: center;
 }
-.newsletter .container{
+
+.newsletter .container {
     max-width: 1170px;
     margin: 0 auto;
     padding: 0 20px;
@@ -130,7 +138,9 @@
     display: flex;
     justify-content: center;
 }
+
 @media only screen and (max-width:1024px) {
+
     .newsletter .title,
     .newsletter form {
         width: 100%;
@@ -141,10 +151,12 @@
         justify-content: center;
         margin-top: 20px
     }
-    .newsletter .container{
+
+    .newsletter .container {
         width: 90%;
-     }
+    }
 }
+
 #NewsLetterFormResponse,
 .counter .count-up .counter-text,
 .newsletter button.subcribe {
@@ -153,11 +165,13 @@
 }
 
 @media only screen and (max-width:768px) {
+
     .newsletter .form-row .form-control,
     .slider-content .decs,
     .slider-content .title {
         width: 90%
     }
+
     .newsletter .form-row {
         flex-wrap: wrap
     }
@@ -184,23 +198,23 @@
     align-items: center;
     justify-content: center;
     gap: 1em;
-  }
-  
-  .content1 {
+}
+
+.content1 {
     width: 360px;
     height: 40px;
     box-shadow: 2px 4px 10px rgba(0, 0, 0, .2);
     border-radius: 60px;
     overflow: hidden;
-  }
-  
-  .subscription {
+}
+
+.subscription {
     position: relative;
     width: 100%;
     height: 100%;
-  }
-  
-  .subscription .add-email{
+}
+
+.subscription .add-email {
     position: absolute;
     top: 0;
     left: 0;
@@ -209,13 +223,14 @@
     border: none;
     outline: none;
     padding: 0 20px;
-  }
-  
-  .subscription .submit-email:hover{
-    background-color: #4ABEBB;
+}
+
+.subscription .submit-email:hover {
+    background-color: var(--dark);
     color: white;
-  }
-  .subscription .submit-email {
+}
+
+.subscription .submit-email {
     position: absolute;
     top: 0;
     right: 0;
@@ -230,16 +245,16 @@
     background: red;
     color: #FFFFFF;
     transition: width .35s ease-in-out,
-      background .35s ease-in-out;
-  }
-  
-  .subscription.done .submit-email {
+        background .35s ease-in-out;
+}
+
+.subscription.done .submit-email {
     width: calc(100% - 2px);
     background: #C0E02E;
-  }
-  
-  .subscription .submit-email .before-submit,
-  .subscription .submit-email .after-submit {
+}
+
+.subscription .submit-email .before-submit,
+.subscription .submit-email .after-submit {
     position: absolute;
     top: 0;
     left: 0;
@@ -248,34 +263,35 @@
     text-align: center;
     line-height: 38px;
     transition: visibility .35s ease-in-out,
-      opacity .35s ease-in-out;
-  }
-  
-  .subscription.done .submit-email .before-submit,
-  .subscription:not(.done) .submit-email .after-submit {
+        opacity .35s ease-in-out;
+}
+
+.subscription.done .submit-email .before-submit,
+.subscription:not(.done) .submit-email .after-submit {
     visibility: hidden;
     opacity: 0;
-  }
-  
-  .subscription .submit-email .after-submit {
+}
+
+.subscription .submit-email .after-submit {
     transition-delay: .35s;
-  }
-  
-  .subscription:not(.done) .submit-email .before-submit,
-  .subscription.done .submit-email .after-submit {
+}
+
+.subscription:not(.done) .submit-email .before-submit,
+.subscription.done .submit-email .after-submit {
     visibility: visible;
     opacity: 1;
-  }
-  @media only screen and (max-width:323px) {
-       
-  }
-  @media only screen and (max-width:369px) {
+}
+
+@media only screen and (max-width:323px) {}
+
+@media only screen and (max-width:369px) {
     .content1 {
         width: 90%;
         text-align: left;
         /* display: none; */
     }
-    .newsletter{
+
+    .newsletter {
         width: 100%;
         /* display: none; */
     }

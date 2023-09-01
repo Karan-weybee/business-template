@@ -5,12 +5,17 @@
     }
 
 
+    .banner-content .title span:first-child{
+
+        border-bottom: 2px solid var(--white);
+    }
     .banner-content .title {
         color: white;
         text-align: center;
         line-height: 1.5;
         padding: 75px 0;
         font-size: 35px;
+        font-style: var(--primary-font)
     }
 
     .banner-area {
