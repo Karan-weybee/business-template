@@ -31,11 +31,20 @@
     color: #e60303
 }
 .newsletter {
+    background-image: url("images/wall2.webp");
     background-color: var(--primary-color);
     padding: 50px 0;
     border-bottom-left-radius: 65px;
     border-top-right-radius: 65px;
+    position: relative;
+    /* opacity: .2; */
 }
+/* .container2{
+    z-index: 1;
+    border-radius: 14px;
+    padding: 10px;
+    background-color:rgba(34, 34, 34, 0.2);
+} */
 
 .newsletter-inside {
     display: flex;
@@ -45,12 +54,13 @@
 .newsletter-inside h3{
     display: flex;
     justify-content: center;
+    position: relative;
 
 }
 .newsletter-inside .title {
     color:var(--white);
     width: 40%;
-    margin: 0px;
+    /* margin-bottom: 50px; */
     font-size: 30px;
     letter-spacing: 1px;
 }

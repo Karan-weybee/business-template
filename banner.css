@@ -6,7 +6,7 @@
 
 
     .banner-content .title {
-        color: #222222;
+        color: white;
         text-align: center;
         line-height: 1.5;
         padding: 75px 0;
@@ -14,12 +14,14 @@
     }
 
     .banner-area {
-       
+       background-image: url("images/hotel3.webp");
+       background-blend-mode: var(--primary-color);
+       /* opacity: .7; */
         border-radius: 20px;
     }
 .banner-area .container {
-    border: 3px solid var(--primary-color);
-    background-color:var(--bgcolor);
+    /* border: 3px solid var(--primary-color); */
+    /* background-color:var(--bgcolor); */
     max-width: 1170px;
     margin: 0 auto;
     padding: 0 15px

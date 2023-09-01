@@ -30,7 +30,7 @@
 .updates .updates-main .updates-items {
     z-index: -1;
     width: 32%;
-    background-color: var(--white);
+    background-color: var(--bgcolor);
     height: 100%;
     margin: 1px;
 }
@@ -156,8 +156,9 @@ button.share-btn {
 }
 #update-btns-update{
     display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
+    flex-wrap: wrap;  
+      justify-content: center;
+    gap: 20px;
 }
 .btn, .slick-list, .slick-slider, .slick-track, .text-link {
     position: relative;

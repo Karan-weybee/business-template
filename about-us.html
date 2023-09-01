@@ -97,9 +97,11 @@
             /*   border: 1px solid black; */
             overflow-x: hidden;
             margin: auto;
+            background-color: var(--primary-color);
         }
 
         .cards-wrapper {
+            margin-bottom: 20px;
             display: flex;
             flex-wrap: wrap;
             justify-content: center;
@@ -118,9 +120,11 @@
             overflow: hidden;
             position: relative;
         }
-        .content-testi{
+
+        .content-testi {
             padding-top: 10px;
         }
+
         .slide_group {
             height: 100%;
             position: relative;
@@ -142,15 +146,19 @@
         .slide:nth-of-type(1):hover {
             box-shadow: 0px 0px 50px var(--primary-color);
         }
+
         .slide:nth-of-type(2):hover {
             box-shadow: 0px 0px 50px var(--primary-color);
         }
+
         .slide:nth-of-type(3):hover {
             box-shadow: 0px 0px 50px var(--primary-color);
         }
+
         .slide:nth-of-type(4):hover {
             box-shadow: 0px 0px 50px var(--primary-color);
         }
+
         .slide:nth-of-type(1) {
             background: var(--bgcolor);
         }
@@ -242,16 +250,38 @@
                 right: 50px;
             }
         }
-        p{
+
+        p {
             font-size: 20px;
         }
+
+        .about-contact-items{
+            display: flex;
+            justify-content:left;
+            gap: 10px;
+            flex-wrap: wrap;
+        }
+        .mobile,.email{
+            display: flex;
+            justify-content:left;
+        }
+        .contact-decs a{
+            text-decoration: none;
+            color: var(--primary-color);
+        }
+       .contact-decs{
+            font-size: 18px;
+            margin: 10px 0 0 10px;
+         
+        }
+    
     </style>
 </head>
 
 <body>
     <!-- Back to Top -->
 
-    <a href="gallery.html" id="button1">
+    <a href="about-us.html" id="button1">
         <svg xmlns="http://www.w3.org/2000/svg" id="Layer_1" enable-background="new 0 0 128 128" viewBox="0 0 128 128">
             <path id="Left_Arrow_4_"
                 d="m84 108c-1.023 0-2.047-.391-2.828-1.172l-40-40c-1.563-1.563-1.563-4.094 0-5.656l40-40c1.563-1.563 4.094-1.563 5.656 0s1.563 4.094 0 5.656l-37.172 37.172 37.172 37.172c1.563 1.563 1.563 4.094 0 5.656-.781.781-1.805 1.172-2.828 1.172z">
@@ -264,8 +294,8 @@
     <nav>
         <ul for="" class="logo"><img src="./images/logo.webp" alt=""></ul>
         <ul class="activity">
-            <li><a href='#'>Home</a></li>
-            <li><a href='#'>About Us</a></li>
+            <li><a href='index.html'>Home</a></li>
+            <li><a href='about-us.html'>About Us</a></li>
             <li><a href='#'>Products</a>
                 <div class="dropdown-menu">
                     <a class="dropdown-item" href="productdetails.html">lorem ipsum Dolor</a>
@@ -279,8 +309,8 @@
                 </label>
             </li>
             <li><a href='update-page-1.html'>Updates</a></li>
-            <li><a href='#'>Gallery</a></li>
-            <li><a href='#'>Contact Us</a></li>
+            <li><a href='gallery.html'>Gallery</a></li>
+            <li><a href='contact.html'>Contact Us</a></li>
         </ul>
         <div class="socialtop">
             <div class='top-social'>
@@ -354,7 +384,15 @@
     <div class="banner-area">
         <div class="container">
             <div class="banner-content">
-                <h1 class="title">About-us</h1>
+                <h1 class="title">
+                    <span>About-us</span>
+                    <br>
+                    <span style="font-size: 20px;">
+                        <a href="index.html" style="color: white;">Home</a> <span>/</span>
+                        <a href="about-us.html" style="color: white;">about</a>
+                    </span>
+                </h1>
+
             </div>
         </div>
     </div>
@@ -382,6 +420,42 @@
                             tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
                             quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
                             consequat.</p><br>
+                            <div class="about-contact">
+                                <div class="about-contact-items" itemscope="">
+                                    <div class="mobile">
+                                        <div class="contact-icon">
+                                            <svg xmlns="http://www.w3.org/2000/svg" id="Layer_3" viewBox="0 0 32 32"
+                                                data-name="Layer 3">
+                                                <path
+                                                    d="m29.393 23.36c-.874-.733-6-3.979-6.852-3.83-.4.071-.706.412-1.525 1.389a11.687 11.687 0 0 1 -1.244 1.347 10.757 10.757 0 0 1 -2.374-.88 14.7 14.7 0 0 1 -6.784-6.786 10.757 10.757 0 0 1 -.88-2.374 11.687 11.687 0 0 1 1.347-1.244c.976-.819 1.318-1.123 1.389-1.525.149-.854-3.1-5.978-3.83-6.852-.306-.362-.584-.605-.94-.605-1.032 0-5.7 5.772-5.7 6.52 0 .061.1 6.07 7.689 13.791 7.721 7.589 13.73 7.689 13.791 7.689.748 0 6.52-4.668 6.52-5.7 0-.356-.243-.634-.607-.94z">
+                                                </path>
+                                                <path d="m23 15h2a8.009 8.009 0 0 0 -8-8v2a6.006 6.006 0 0 1 6 6z"></path>
+                                                <path d="m28 15h2a13.015 13.015 0 0 0 -13-13v2a11.013 11.013 0 0 1 11 11z">
+                                                </path>
+                                            </svg>
+                                        </div>
+                                        <div class="contact-decs">
+                                            <a href="tel:+91 123 456 7890" itemprop="telephone">+91 123 456 7890</a>
+                                        </div>
+                                    </div>
+                                    <div class="email">
+                                        <div class="contact-icon" style="margin-left: 20px;">
+                                            <svg xmlns="http://www.w3.org/2000/svg" id="Layer_1"
+                                                enable-background="new 0 0 512 512" viewBox="0 0 512 512">
+                                                <path
+                                                    d="m298.789 313.693c-12.738 8.492-27.534 12.981-42.789 12.981-15.254 0-30.05-4.489-42.788-12.981l-209.803-139.873c-1.164-.776-2.298-1.585-3.409-2.417v229.197c0 26.278 21.325 47.133 47.133 47.133h417.733c26.278 0 47.133-21.325 47.133-47.133v-229.198c-1.113.834-2.249 1.645-3.416 2.422z">
+                                                </path>
+                                                <path
+                                                    d="m20.05 148.858 209.803 139.874c7.942 5.295 17.044 7.942 26.146 7.942 9.103 0 18.206-2.648 26.148-7.942l209.803-139.874c12.555-8.365 20.05-22.365 20.05-37.475 0-25.981-21.137-47.117-47.117-47.117h-417.766c-25.98.001-47.117 21.137-47.117 47.142 0 15.085 7.496 29.085 20.05 37.45z">
+                                                </path>
+                                            </svg>
+                                        </div>
+                                        <div class="contact-decs">
+                                            <a href="tel:+91 123 456 7890" itemprop="email">Your@gmail.com</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
 
                     </div>
                 </div>
@@ -394,7 +468,7 @@
     <!-- team sider  -->
     <div class="display-area">
         <div style="display: flex; justify-content: center; margin: 50px 0;">
-            <h3 style="font-size: 35px;">Meet Our Team </h3>
+            <h3 style="font-size: 35px; color: var(--white);">Meet Our Team </h3>
             <br>
         </div>
         <div class="cards-wrapper">
@@ -470,9 +544,9 @@
             <div class="slide_group">
                 <div class="slide" style="display: flex; justify-content: center;">
                     <div class="content-testi" style="align-items: center; text-align:center">
-                    <img src="images/testimonial-icon.webp" width="80px" height="80px" alt="socialsparsh"
-                            itemprop="name" style="width: 80px; height: 80px;"> 
-                   <br><br>
+                        <img src="images/testimonial-icon.webp" width="80px" height="80px" alt="socialsparsh"
+                            itemprop="name" style="width: 80px; height: 80px;">
+                        <br><br>
                         <p class="decs" itemprop="reviewBody">
                             Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt
                             ut labore et dolore magna aliqua.
@@ -486,47 +560,47 @@
                 <div class="slide">
                     <div class="content-testi" style="align-items: center; text-align:center">
                         <img src="images/testimonial-icon.webp" width="80px" height="80px" alt="socialsparsh"
-                                itemprop="name" style="width: 80px; height: 80px;"> 
-                       <br><br>
-                            <p class="decs" itemprop="reviewBody">
-                                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt
-                                ut labore et dolore magna aliqua.
-                                Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
-                                commodo
-                                consequat.</p><br>
-                            <div class="title" itemprop="author">Lorem Ipsum</div><br>
-                            <div class="designation" itemprop="designation">Weybee Solution pvt. ltd.</div>
-                        </div>
+                            itemprop="name" style="width: 80px; height: 80px;">
+                        <br><br>
+                        <p class="decs" itemprop="reviewBody">
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt
+                            ut labore et dolore magna aliqua.
+                            Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+                            commodo
+                            consequat.</p><br>
+                        <div class="title" itemprop="author">Lorem Ipsum</div><br>
+                        <div class="designation" itemprop="designation">Weybee Solution pvt. ltd.</div>
+                    </div>
                 </div>
                 <div class="slide">
                     <div class="content-testi" style="align-items: center;text-align:center">
                         <img src="images/testimonial-icon.webp" width="80px" height="80px" alt="socialsparsh"
-                                itemprop="name" style="width: 80px; height: 80px;"> 
-                       <br><br>
-                            <p class="decs" itemprop="reviewBody">
-                                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt
-                                ut labore et dolore magna aliqua.
-                                Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
-                                commodo
-                                consequat.</p><br>
-                            <div class="title" itemprop="author">Lorem Ipsum</div><br>
-                            <div class="designation" itemprop="designation">Weybee Solution pvt. ltd.</div>
-                        </div>
+                            itemprop="name" style="width: 80px; height: 80px;">
+                        <br><br>
+                        <p class="decs" itemprop="reviewBody">
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt
+                            ut labore et dolore magna aliqua.
+                            Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+                            commodo
+                            consequat.</p><br>
+                        <div class="title" itemprop="author">Lorem Ipsum</div><br>
+                        <div class="designation" itemprop="designation">Weybee Solution pvt. ltd.</div>
+                    </div>
                 </div>
                 <div class="slide">
                     <div class="content-testi" style="align-items: center; text-align:center">
                         <img src="images/testimonial-icon.webp" width="80px" height="80px" alt="socialsparsh"
-                                itemprop="name" style="width: 80px; height: 80px;"> 
-                       <br><br>
-                            <p class="decs" itemprop="reviewBody">
-                                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt
-                                ut labore et dolore magna aliqua.
-                                Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
-                                commodo
-                                consequat.</p><br>
-                            <div class="title" itemprop="author">Lorem Ipsum</div><br>
-                            <div class="designation" itemprop="designation">Weybee Solution pvt. ltd.</div>
-                        </div>
+                            itemprop="name" style="width: 80px; height: 80px;">
+                        <br><br>
+                        <p class="decs" itemprop="reviewBody">
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt
+                            ut labore et dolore magna aliqua.
+                            Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+                            commodo
+                            consequat.</p><br>
+                        <div class="title" itemprop="author">Lorem Ipsum</div><br>
+                        <div class="designation" itemprop="designation">Weybee Solution pvt. ltd.</div>
+                    </div>
                 </div>
             </div>
         </div>
@@ -566,7 +640,7 @@
     </div><!-- End // .directional_nav -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
     <!--Testimonial-End-Section-->
-  <br><br>
+    <br><br>
     <!-- News Letter Here -->
     <div class="newsletter">
 

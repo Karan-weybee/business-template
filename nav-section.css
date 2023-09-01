@@ -63,7 +63,7 @@
   }
   
   ul li:first-child {
-    background: var(--nav-hover-color);
+    /* background: var(--nav-hover-color); */
   }
   
   ul li:hover {

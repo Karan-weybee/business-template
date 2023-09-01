@@ -19,6 +19,7 @@
         :root {
             --primary-color: #222222;
             --second-color: rgb(248, 208, 155);
+            /* --second-color:  rgb(13, 82, 84); */
             --nav-hover-color: #FF7D00;
             --white: #ffffff;
             --dark: #506172;
@@ -35,6 +36,25 @@
 
         body {
             background-color: var(--bgcolor);
+        }
+        .about-contact-items{
+            display: flex;
+            justify-content:left;
+            gap: 10px;
+            flex-wrap: wrap;
+        }
+        .mobile,.email{
+            display: flex;
+            justify-content:left;
+        }
+        .contact-decs a{
+            text-decoration: none;
+            color: var(--primary-color);
+        }
+       .contact-decs{
+            font-size: 18px;
+            margin: 10px 0 0 10px;
+         
         }
     </style>
 
@@ -58,7 +78,7 @@
     <nav>
         <ul for="" class="logo"><img src="./images/logo.webp" alt=""></ul>
         <ul class="activity">
-            <li><a href='#'>Home</a></li>
+            <li><a href='index.html'>Home</a></li>
             <li><a href='about-us.html'>About Us</a></li>
             <li><a href='#'>Products</a>
                 <div class="dropdown-menu">
@@ -196,30 +216,57 @@
 
     <!-- / Main Slider -->
 
-    <!--About Section-->
-    <div class="about-us spad">
+     <!-- about section  -->
+     <div class="about-us spad">
         <div class="container">
             <div class="about-us-inside">
-                <div class="about-us-img">
-                    <img src="images/About-us.webp" srcset="images/About-us.webp 480w, images/About-us.webp 800w"
-                        sizes="(max-width: 600px) 480px, 800px" alt="Social-Parsh" width="540px" height="360px"
-                        alt="Social-Parsh" itemprop="image">
-                </div>
                 <div class="about-us-content">
                     <div class="title">
                         <h1> Welcome to Lorem Ipsum Dolor Sit Armt</h1>
                     </div>
-                    <div class="decs">
+                    <div class="decs" style="font-style: var(--primary-font);">
                         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
                             tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
                             quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
                             consequat.</p><br>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-                            tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-                            quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-                            consequat.</p><br>
+                        <p>Lorem ipsum dolor sit amet, .</p><br>
+                        <div class="about-contact">
+                            <div class="about-contact-items" itemscope="" >
+                                <div class="mobile">
+                                <div class="contact-icon">
+                                    <svg xmlns="http://www.w3.org/2000/svg" id="Layer_3" viewBox="0 0 32 32" data-name="Layer 3">
+                                        <path d="m29.393 23.36c-.874-.733-6-3.979-6.852-3.83-.4.071-.706.412-1.525 1.389a11.687 11.687 0 0 1 -1.244 1.347 10.757 10.757 0 0 1 -2.374-.88 14.7 14.7 0 0 1 -6.784-6.786 10.757 10.757 0 0 1 -.88-2.374 11.687 11.687 0 0 1 1.347-1.244c.976-.819 1.318-1.123 1.389-1.525.149-.854-3.1-5.978-3.83-6.852-.306-.362-.584-.605-.94-.605-1.032 0-5.7 5.772-5.7 6.52 0 .061.1 6.07 7.689 13.791 7.721 7.589 13.73 7.689 13.791 7.689.748 0 6.52-4.668 6.52-5.7 0-.356-.243-.634-.607-.94z">
+                                        </path>
+                                        <path d="m23 15h2a8.009 8.009 0 0 0 -8-8v2a6.006 6.006 0 0 1 6 6z"></path>
+                                        <path d="m28 15h2a13.015 13.015 0 0 0 -13-13v2a11.013 11.013 0 0 1 11 11z"></path>
+                                    </svg>
+                                </div>
+                                <div class="contact-decs">
+                                    <a href="tel:+91 123 456 7890" itemprop="telephone">+91 123 456 7890</a>
+                                </div>
+                            </div>
+                            <div class="email">
+                                <div class="contact-icon">
+                                    <svg xmlns="http://www.w3.org/2000/svg" id="Layer_1" enable-background="new 0 0 512 512" viewBox="0 0 512 512">
+                                        <path d="m298.789 313.693c-12.738 8.492-27.534 12.981-42.789 12.981-15.254 0-30.05-4.489-42.788-12.981l-209.803-139.873c-1.164-.776-2.298-1.585-3.409-2.417v229.197c0 26.278 21.325 47.133 47.133 47.133h417.733c26.278 0 47.133-21.325 47.133-47.133v-229.198c-1.113.834-2.249 1.645-3.416 2.422z">
+                                        </path>
+                                        <path d="m20.05 148.858 209.803 139.874c7.942 5.295 17.044 7.942 26.146 7.942 9.103 0 18.206-2.648 26.148-7.942l209.803-139.874c12.555-8.365 20.05-22.365 20.05-37.475 0-25.981-21.137-47.117-47.117-47.117h-417.766c-25.98.001-47.117 21.137-47.117 47.142 0 15.085 7.496 29.085 20.05 37.45z">
+                                        </path>
+                                    </svg>
+                                </div>
+                                <div class="contact-decs">
+                                    <a href="tel:+91 123 456 7890" itemprop="email">Your@gmail.com</a>
+                                </div>
+                            </div>
+                            </div>
+                        </div>
 
                     </div>
+                </div>
+                <div class="about-us-img">
+                    <img src="images/About-us.webp" srcset="images/About-us.webp 480w, images/About-us.webp 800w"
+                        sizes="(max-width: 600px) 480px, 800px" alt="Social-Parsh" width="540px" height="360px"
+                        alt="Social-Parsh" itemprop="image">
                 </div>
             </div>
         </div>
@@ -232,22 +279,46 @@
             <h1 class="title">Our Relative Number</h1>
             <div class="counter-inside">
                 <div class="count-up">
+                    <div class="icon-wrapper">
+                        <!-- <i class="fas fa-hammer"></i> -->
+                        <img src="images/wall.webp" alt="" style="border-radius: 50%;" width="80px"
+                            height="75px" loading="lazy">
+                    </div>
+                    <br>
                     <div class="counter-count" id="count1"></div>
                     <!-- <div class="counter-count" >1000</div> -->
                     <div class="counter-text">Lorem Ispsum Dolor</div>
                 </div>
 
                 <div class="count-up">
+                    <div class="icon-wrapper">
+                        <!-- <i class="fas fa-hammer"></i> -->
+                        <img src="images/wall2.webp" alt="" style="border-radius: 50%;" width="80px"
+                            height="75px" loading="lazy">
+                    </div>
+                    <br>
                     <div class="counter-count" id="count2"></div>
                     <div class="counter-text">Lorem Ispsum Dolor</div>
                 </div>
 
                 <div class="count-up">
+                    <div class="icon-wrapper">
+                        <!-- <i class="fas fa-hammer"></i> -->
+                        <img src="images/wall.webp" alt="" style="border-radius: 50%;" width="80px"
+                            height="75px" loading="lazy">
+                    </div>
+                    <br>
                     <div class="counter-count" id="count3"></div>
                     <div class="counter-text">Lorem Ispsum Dolor</div>
                 </div>
 
                 <div class="count-up">
+                    <div class="icon-wrapper">
+                        <!-- <i class="fas fa-hammer"></i> -->
+                        <img src="images/blog.webp" alt="" style="border-radius: 50%;" width="80px"
+                            height="75px" loading="lazy">
+                    </div>
+                    <br>
                     <div class="counter-count" id="count4"></div>
                     <div class="counter-text">Lorem Ispsum Dolor</div>
                 </div>
@@ -266,7 +337,7 @@
                         <div class="icon-wrapper">
                             <!-- <i class="fas fa-hammer"></i> -->
                             <img src="images/Blogimg.webp" alt="" style="border-radius: 50%;" width="80px"
-                                height="75px">
+                                height="75px" loading="lazy">
                         </div>
                         <h3>Service Heading</h3>
                         <p>
@@ -301,7 +372,7 @@
                     <div class="card">
                         <div class="icon-wrapper">
                             <img src="images/Blogimg.webp" alt="" style="border-radius: 50%;" width="80px"
-                                height="75px">
+                                height="75px" loading="lazy">
                         </div>
                         <h3>Service Heading</h3>
                         <p>
@@ -336,7 +407,7 @@
                     <div class="card">
                         <div class="icon-wrapper">
                             <img src="images/Blogimg.webp" alt="" style="border-radius: 50%;" width="80px"
-                                height="75px">
+                                height="75px" loading="lazy">
                         </div>
                         <h3>Service Heading</h3>
                         <p>
@@ -480,12 +551,12 @@
                         <div itemprop="publisher" itemscope="" itemtype="https://schema.org/Organization">
                             <span itemprop="name">#</span>
                             <div itemprop="logo" itemscope="" itemtype="http://schema.org/ImageObject">
-                                <img src="images/logo.webp" alt="" itemprop="url">
+                                <img src="images/logo.webp" alt="" itemprop="url" loading="lazy">
                             </div>
                         </div>
                     </div>
                     <div class="updates-images">
-                        <img src="images/blog.webp" width="100%" height="100%" alt="blog" itemprop="image">
+                        <img src="images/blog.webp" width="100%" height="100%" alt="blog" itemprop="image" loading="lazy">
                     </div>
                     <div class="updates-content">
                         <div class="updates-date-share">
@@ -530,12 +601,12 @@
                         <div itemprop="publisher" itemscope="" itemtype="https://schema.org/Organization">
                             <span itemprop="name">#</span>
                             <div itemprop="logo" itemscope="" itemtype="http://schema.org/ImageObject">
-                                <img src="images/logo.webp" alt="" itemprop="url">
+                                <img src="images/logo.webp" alt="" itemprop="url" loading="lazy">
                             </div>
                         </div>
                     </div>
                     <div class="updates-images">
-                        <img src="images/blog.webp" width="100%" height="100%" alt="blog" itemprop="image">
+                        <img src="images/blog.webp" width="100%" height="100%" alt="blog" itemprop="image" loading="lazy">
                     </div>
                     <div class="updates-content">
                         <div class="updates-date-share">
@@ -580,12 +651,12 @@
                         <div itemprop="publisher" itemscope="" itemtype="https://schema.org/Organization">
                             <span itemprop="name">#</span>
                             <div itemprop="logo" itemscope="" itemtype="http://schema.org/ImageObject">
-                                <img src="images/logo.webp" alt="" itemprop="url">
+                                <img src="images/logo.webp" alt="" itemprop="url" loading="lazy">
                             </div>
                         </div>
                     </div>
                     <div class="updates-images">
-                        <img src="images/blog.webp" width="100%" height="100%" alt="blog" itemprop="image">
+                        <img src="images/blog.webp" width="100%" height="100%" alt="blog" itemprop="image" loading="lazy">
                     </div>
                     <div class="updates-content">
                         <div class="updates-date-share">
@@ -721,23 +792,23 @@
         <div class="container-fluid">
             <div class="logo-slider-inner">
                 <div class="logo-slider-items"><img src="images/gallery.webp" alt="Cinque Terre"
-                        style="width: 250px; height: 250px;"></div>
+                        style="width: 250px; height: 250px;" loading="lazy"></div>
                 <div class="logo-slider-items"><img src="images/blog.webp" alt="Cinque Terre"
-                        style="width: 250px; height: 250px;"></div>
+                        style="width: 250px; height: 250px;" loading="lazy"></div>
                 <div class="logo-slider-items"><img src="images/gallery.webp" alt="Cinque Terre"
-                        style="width: 250px; height: 250px;"></div>
+                        style="width: 250px; height: 250px;" loading="lazy"></div>
                 <div class="logo-slider-items"><img src="images/blog.webp" alt="Cinque Terre"
-                        style="width: 250px; height: 250px;"></div>
+                        style="width: 250px; height: 250px;" loading="lazy"></div>
                 <div class="logo-slider-items"><img src="images/gallery.webp" alt="Cinque Terre"
-                        style="width: 250px; height: 250px;"></div>
+                        style="width: 250px; height: 250px;" loading="lazy"></div>
                 <div class="logo-slider-items"><img src="images/blog.webp" alt="Cinque Terre"
-                        style="width: 250px; height: 250px;"></div>
+                        style="width: 250px; height: 250px;" loading="lazy"></div>
                 <div class="logo-slider-items"><img src="images/gallery.webp" alt="Cinque Terre"
-                        style="width: 250px; height: 250px;"></div>
+                        style="width: 250px; height: 250px;" loading="lazy"></div>
                 <div class="logo-slider-items"><img src="images/blog.webp" alt="Cinque Terre"
-                        style="width: 250px; height: 250px;"></div>
+                        style="width: 250px; height: 250px;" loading="lazy"></div>
                 <div class="logo-slider-items"><img src="images/gallery.webp" alt="Cinque Terre"
-                        style="width: 250px; height: 250px;"></div>
+                        style="width: 250px; height: 250px;" loading="lazy"></div>
 
             </div>
         </div>
@@ -751,7 +822,7 @@
             <div class="footer-inside">
                 <div class="footer-items">
                     <div class="footer-logo">
-                        <img src="images/logo.webp" width="111px" height="23px" alt="logo" itemprop="image">
+                        <img src="images/logo.webp" width="111px" height="23px" alt="logo" itemprop="image" loading="lazy">
                     </div>
                     <p class="decs">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
                         tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam</p>
