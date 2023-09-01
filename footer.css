@@ -71,7 +71,11 @@
     .text-link:hover:after {
         width: 100%;
     }
-
+.footer-links ul{
+        float: left;
+        margin-left: 0%;
+      
+}
 .footer-links .navbar-nav .nav-item {
     position: relative;
     left: 0;
@@ -103,7 +107,7 @@
 .footer-links .navbar-nav{
     margin-top: 1em;
  float: left;
- margin-left: 10%;
+ margin-left: 0%;
 }
 .footer-links{
     display: flex;
