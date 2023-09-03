@@ -62,7 +62,7 @@
 }
 
 .footer-social ul li a svg {
-    fill: black;
+    fill: var(--white);
     position: absolute;
     left: 6px;
     top: 10px;
@@ -101,7 +101,7 @@
 }
 .footer-links .navbar-nav .nav-item .nav-link:hover {
     /* padding-left: 25px; */
-    color: var(--second-color)
+    color: var(--primary-color)
 }
 
 .footer-links .navbar-nav{
@@ -145,7 +145,7 @@
     top: 11px;
     left: 8px;
     width: 27px;
-    fill: black
+    fill: var(--white)
 }
 contact-info .contact-items span {
     font-size: 20px;

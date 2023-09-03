@@ -2,10 +2,9 @@
     background:#e6e6e6;
   } */
 #slider {
-    z-index: 0;
+    z-index: -2;
     width: 100%;
     margin: 0 auto;
-    position: relative;
     overflow: hidden;
     box-shadow: 2px 5px 10px rgba(235, 164, 164, 0.9);
 }

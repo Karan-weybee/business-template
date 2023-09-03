@@ -15,7 +15,7 @@
 
 .updates .updates-main {
     display: flex;
-    gap: 15px;
+    gap: 17px;
     justify-content: center;
     flex-wrap: wrap;
     margin: 25px 0
@@ -52,7 +52,33 @@
     justify-content: space-between;
     margin-bottom: 10px
 }
+.updates-date-share a svg{
+    fill: var(--second-color);
+    margin-top: 6px;
+}
 
+.updates-date-share a:hover{
+    background-color: var(--second-color);
+}
+.updates-items .title{
+    border: 1px solid black;
+    margin-bottom: .9px;
+    padding: 1.5px;
+    font-size: 22px;
+}
+.updates-content .share{
+    font-size: 19px;
+}
+.updates-content .decs{
+    font-size: 19px;
+}
+.updates-date-share a{
+    background-color: var(--primary-color);
+    margin-top: -2px;
+    cursor: pointer;
+    margin-bottom: 1px;
+    border-radius: 7px;
+}
 .updates-content .date {
     color: var(--primary-color);
     font-size: 15px;
@@ -60,12 +86,6 @@
     font-family: var(--second-font)
 }
 
-.updates-content .title {
-    font-size: 22px;
-    font-weight: 500;
-    text-decoration: none;
-    color: var(--second-color)
-}
 
 .updates-content:after {
     content: '';
