@@ -226,7 +226,7 @@
 }
 
 .subscription .submit-email:hover {
-    background-color: var(--dark);
+    background-color: var(--second-color);
     color: white;
 }
 
