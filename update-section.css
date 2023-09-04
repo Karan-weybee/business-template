@@ -28,7 +28,7 @@
 }
 
 .updates .updates-main .updates-items {
-    z-index: -1;
+    /* z-index: -1; */
     width: 32%;
     background-color: var(--bgcolor);
     height: 100%;
@@ -57,9 +57,9 @@
     margin-top: 6px;
 }
 
-.updates-date-share a:hover{
+/* .updates-date-share .share-link:hover{
     background-color: var(--second-color);
-}
+} */
 .updates-items .title{
     border: 1px solid black;
     margin-bottom: .9px;

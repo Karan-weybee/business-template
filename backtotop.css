@@ -10,7 +10,6 @@
     bottom: 30px;
     right: 30px;
     transition: var(--second-color) .3s, opacity .5s, visibility .5s;
-    /* opacity: 0; */
     z-index: 1000
 }
 
