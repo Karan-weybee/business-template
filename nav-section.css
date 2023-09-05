@@ -17,7 +17,7 @@
     cursor: pointer;
     display: none;
   }
-  
+
   nav {
     background: var(--primary-color);
     /* height: 47px; */
@@ -71,6 +71,7 @@
   ul li:hover {
     background: var(--nav-hover-color);
     color: #fff;
+    
   }
   
   ul li a:hover {

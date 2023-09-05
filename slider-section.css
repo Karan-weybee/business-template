@@ -123,5 +123,12 @@ img {
 @media (max-width: 611px) {
     .slider-content {
         /* display: none; */
+        font-size: 15px;
+    }
+}
+@media (max-width: 407px) {
+    .slider-content {
+        /* display: none; */
+        font-size: 12px;
     }
 }
