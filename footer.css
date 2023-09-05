@@ -21,7 +21,9 @@
         max-width: 1170px;
     }
 }
-
+.contact-decs a{
+    text-decoration: none;
+}
 .footer-inside {
 
     display: flex;
