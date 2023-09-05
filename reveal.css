@@ -1,10 +1,9 @@
 
 .reveal{
     position: relative;
-    transform: translateY(100px);
+    transform: translateY(60px);
     opacity: 0;
     transition: 1s all ease;
-    background-color: var(--bgcolor);
   }
   
   .reveal.active{
@@ -12,7 +11,7 @@
     opacity: 1;
   }
   
-.reveal1{
+/* .reveal1{
     position: relative;
     transform: translatex(100px);
     opacity: 0;
@@ -23,4 +22,4 @@
   .reveal1.active{
     transform: translatex(0);
     opacity: 1;
-  }
+  } */

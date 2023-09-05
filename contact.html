@@ -58,6 +58,8 @@
     <link rel="stylesheet" href="backtotop.css">
     <link rel="stylesheet" href="banner.css">
     <link rel="stylesheet" href="about-section.css">
+    <link rel="stylesheet" href="reveal.css">
+    <script type="module" src="reveal-animation.js"></script>
     <style>
         .footer-items .title {
             color: var(--primary-color);
@@ -223,7 +225,6 @@
         }
 
         .contact-us-items:first-child:hover {
-
             box-shadow: 0px 0px 25px var(--primary-color);
         }
 
@@ -1078,14 +1079,14 @@
             <div class="card">
                 <div class="form">
                     <div class="left-side">
-                        <div class="top">
+                        <div class="top reveal">
                             <h4>Contact Information</h4>
                             <p>Fill up the form and our Team will get back to you within 24 hours.</p>
                         </div>
-                        <div class="medium">
+                        <div class="medium reveal" style="z-index:0;">
 
 
-                            <p><svg id="Layer_3" height="512" viewBox="0 0 32 32" width="500"
+                            <p style="z-index: -2;"><svg id="Layer_3" height="512" viewBox="0 0 32 32" width="500"
                                     xmlns="http://www.w3.org/2000/svg" data-name="Layer 3">
                                     <path
                                         d="m29.393 23.36c-.874-.733-6-3.979-6.852-3.83-.4.071-.706.412-1.525 1.389a11.687 11.687 0 0 1 -1.244 1.347 10.757 10.757 0 0 1 -2.374-.88 14.7 14.7 0 0 1 -6.784-6.786 10.757 10.757 0 0 1 -.88-2.374 11.687 11.687 0 0 1 1.347-1.244c.976-.819 1.318-1.123 1.389-1.525.149-.854-3.1-5.978-3.83-6.852-.306-.362-.584-.605-.94-.605-1.032 0-5.7 5.772-5.7 6.52 0 .061.1 6.07 7.689 13.791 7.721 7.589 13.73 7.689 13.791 7.689.748 0 6.52-4.668 6.52-5.7 0-.356-.243-.634-.607-.94z" />
@@ -1093,7 +1094,7 @@
                                     <path d="m28 15h2a13.015 13.015 0 0 0 -13-13v2a11.013 11.013 0 0 1 11 11z" />
                                 </svg>
                                 +0123 456 78910</p><br>
-                            <p><svg id="Layer_1" enable-background="new 0 0 512 512" height="512" viewBox="0 0 512 512"
+                            <p> <svg id="Layer_1" enable-background="new 0 0 512 512" height="512" viewBox="0 0 512 512"
                                     width="512" xmlns="http://www.w3.org/2000/svg">
                                     <path
                                         d="m298.789 313.693c-12.738 8.492-27.534 12.981-42.789 12.981-15.254 0-30.05-4.489-42.788-12.981l-209.803-139.873c-1.164-.776-2.298-1.585-3.409-2.417v229.197c0 26.278 21.325 47.133 47.133 47.133h417.733c26.278 0 47.133-21.325 47.133-47.133v-229.198c-1.113.834-2.249 1.645-3.416 2.422z" />
@@ -1112,7 +1113,7 @@
                                     </g>
                                 </svg>102 street 2714 Don</p>
                         </div>
-                        <div class="last" style=" margin-left: -22px;
+                        <div class="last reveal" style=" margin-left: -22px;
                         margin-top: 10%;"> <span><svg id="Layer_1" enable-background="new 0 0 100 100" height="512"
                                     viewBox="0 0 100 100" width="512" xmlns="http://www.w3.org/2000/svg">
                                     <g id="_x30_1._Facebook">
@@ -1149,17 +1150,17 @@
                     <div class="right-side">
                         <div class="card-details">
                             <div class="input-group">
-                                <div class="input"> <input type="text" required="required"> <span>First Name</span>
+                                <div class="input reveal"> <input type="text" required="required"> <span>First Name</span>
                                 </div>
-                                <div class="input"> <input type="text" required="required"> <span>Last Name</span>
+                                <div class="input reveal"> <input type="text" required="required"> <span>Last Name</span>
                                 </div>
                             </div>
                             <div class="input-group">
-                                <div class="input"> <input type="text" required="required"> <span>E-mail</span> </div>
-                                <div class="input"> <input type="text" required="required"> <span>Phone no.</span>
+                                <div class="input reveal"> <input type="text" required="required"> <span>E-mail</span> </div>
+                                <div class="input reveal"> <input type="text" required="required"> <span>Phone no.</span>
                                 </div>
                             </div>
-                            <div class="button3"> <button>Send Message</button> </div>
+                            <div class="button3 reveal"> <button>Send Message</button> </div>
 
                         </div>
                     </div>
@@ -1190,7 +1191,7 @@
     </div>
     <!-- News Letter End -->
     <!-- Main Footer Here-->
-    <footer class="main-footer" style="background-color: var(--bgcolor);color: var(--primary-color);">
+    <footer class="main-footer reveal" style="background-color: var(--bgcolor);color: var(--primary-color);">
         <div class="container">
             <div class="footer-inside">
                 <hr>

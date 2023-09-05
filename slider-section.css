@@ -84,10 +84,6 @@ img {
     text-align: center;
 }
 
-.active {
-    background: crimson;
-}
-
 #slider {
     z-index: -1;
     /* display: none; */
