@@ -13,13 +13,13 @@
   
 /* .reveal1{
     position: relative;
-    transform: translatex(100px);
+    transform: translatey(100px);
     opacity: 0;
     transition: 1s all ease;
     background-color: var(--bgcolor);
   }
   
   .reveal1.active{
-    transform: translatex(0);
+    transform: translatey(0);
     opacity: 1;
   } */

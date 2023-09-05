@@ -2,9 +2,10 @@
     margin-top: 2em;
 }
 .about-us .container {
-    /* max-width: 1170px; */
+    max-width: 1170px;
     margin: 50px auto;
     padding: 0 15px;
+    animation: none;
    
 }
 .about-us-inside {
