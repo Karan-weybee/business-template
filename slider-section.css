@@ -126,6 +126,6 @@ img {
 
 @media (max-width: 611px) {
     .slider-content {
-        display: none;
+        /* display: none; */
     }
 }

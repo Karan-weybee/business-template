@@ -38,6 +38,8 @@
     <link rel="stylesheet" href="logo-slider.css">
     <link rel="stylesheet" href="footer.css">
     <link rel="stylesheet" href="copy-right.css">
+    <link rel="stylesheet" href="reveal.css">
+    <script type="module" src="reveal-animation.js"></script>
     <style>
         :root {
             --primary-color: #222222;
@@ -182,7 +184,7 @@
 <body onresize="myFunction()">
     <!-- Back to Top -->
 
-    <a href="index.html" id="button1">
+    <a href="index.html" id="button1" aria-label="backtotop">
         <svg xmlns="http://www.w3.org/2000/svg" id="Layer_1" enable-background="new 0 0 128 128" viewBox="0 0 128 128">
             <path id="Left_Arrow_4_"
                 d="m84 108c-1.023 0-2.047-.391-2.828-1.172l-40-40c-1.563-1.563-1.563-4.094 0-5.656l40-40c1.563-1.563 4.094-1.563 5.656 0s1.563 4.094 0 5.656l-37.172 37.172 37.172 37.172c1.563 1.563 1.563 4.094 0 5.656-.781.781-1.805 1.172-2.828 1.172z">
@@ -457,7 +459,7 @@
 
     <!-- Conter Number End-->
     <!-- Our-Services Here -->
-    <div class="our-serivces spad" id="services">
+    <div class="our-serivces spad reveal" id="services">
         <div class="container">
             <h2 class="title">Our Best Products/Services</h2>
             <div class="row">
@@ -594,7 +596,7 @@
     </div>
     <!-- News Letter End -->
     <!-- Updates Here-->
-    <div class="updates spad">
+    <div class="updates spad reveal">
         <div class="container">
             <div class="updates-main">
 
@@ -885,7 +887,7 @@
 
     <!--Logo Slider sections-end-->
     <!-- Main Footer Here-->
-    <footer class="main-footer">
+    <footer class="main-footer reveal" style="background-color: var(--primary-color);">
         <div class="container">
             <div class="footer-inside">
                 <div class="footer-items">

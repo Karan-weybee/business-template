@@ -2,10 +2,33 @@
     margin-top: 2em;
 }
 .about-us .container {
-    max-width: 1170px;
+    /* max-width: 1170px; */
     margin: 50px auto;
     padding: 0 15px;
-
+    animation-name: about-animate1;
+   animation-duration:2s;
+   
+}
+@keyframes about-animate1{
+    from { 
+        max-width: 1470px;
+    }
+    to {  max-width: 1170px;
+    }
+}
+@keyframes about-animate{
+    from { 
+        margin-right: 0%;
+    }
+    to { margin-right: -1%;
+    }
+}
+@keyframes about-animate2{
+    from { 
+        margin-left: 0%;
+    }
+    to { margin-left: 0%;
+    }
 }
 .about-us-inside {
     display: flex;
@@ -20,6 +43,8 @@
     width: 540px;
     height: 360px;
     border-radius: 20px;
+    animation-name: about-animate2;
+   animation-duration:2s;
 }
 .about-us-content .title{
     margin-top: 0%;
@@ -34,6 +59,8 @@
         margin: 15px;
     }
     .about-us-content{
+        animation-name: about-animate;
+   animation-duration:2s;
         margin: 15px;
         font-size: 12px;
     }
