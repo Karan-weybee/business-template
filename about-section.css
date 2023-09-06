@@ -54,7 +54,7 @@
     .about-us-content,
         .about-us-img {
             width: 100%;
-            height: 392.63px;
+            height: auto;
             flex: auto
         }
 }
