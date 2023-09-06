@@ -356,6 +356,22 @@
         .dotted {
             border: 3px dotted black;
         }
+        .our-team .container {
+    max-width: 1170px;
+    margin: 0 auto;
+    padding: 0 20px;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+}
+.testimonial_section .container {
+    max-width: 1170px;
+    margin: 0 auto;
+    padding: 0 20px;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+}
     </style>
 </head>
 
@@ -609,50 +625,63 @@
         </div>
     </div>
     <!-- team sider  -->
-    <div class="display-area">
+    <div class="display-area our_team spad">
+        <div class="container">
         <div style="display: flex; justify-content: center; margin: 50px 0;">
-            <h3 style="font-size: 35px; color: var(--white);">Meet Our Team </h3>
+            <h3 class="title" style="font-size: 35px; color: var(--white);">Meet Our Team </h3>
             <br>
         </div>
-        <div class="cards-wrapper reveal">
+        <div class="cards-wrapper reveal team_inner">
 
-            <div class="card">
+            
+            <div class="card team-member">
                 <img src="images/team-memeber.webp" alt="socialsparsh" loading="lazy">
                 <div class="team-details">
-                    <div class="team-data">
+                    <div class="team-data team-member-desc">
                         <div class="member-name">James</div>
                         <div class="member-passion">Web Devloper</div>
                     </div>
                 </div>
             </div>
-            <div class="card">
+            <div class="card team-member">
                 <img src="images/team-memeber.webp" alt="socialsparsh" loading="lazy">
                 <div class="team-details">
-                    <div class="team-data">
+                    <div class="team-data team-member-desc">
                         <div class="member-name">James</div>
                         <div class="member-passion">Web Devloper</div>
                     </div>
                 </div>
             </div>
-            <div class="card">
+            <div class="card team-member">
                 <img src="images/team-memeber.webp" alt="socialsparsh" loading="lazy">
                 <div class="team-details">
-                    <div class="team-data">
+                    <div class="team-data team-member-desc">
                         <div class="member-name">James</div>
                         <div class="member-passion">Web Devloper</div>
                     </div>
                 </div>
             </div>
-            <div class="card">
+            <div class="card team-member">
                 <img src="images/team-memeber.webp" alt="socialsparsh" loading="lazy">
                 <div class="team-details">
-                    <div class="team-data">
+                    <div class="team-data team-member-desc">
                         <div class="member-name">James</div>
                         <div class="member-passion">Web Devloper</div>
                     </div>
                 </div>
             </div>
+            <div class="card team-member">
+                <img src="images/team-memeber.webp" alt="socialsparsh" loading="lazy">
+                <div class="team-details">
+                    <div class="team-data team-member-desc">
+                        <div class="member-name">James</div>
+                        <div class="member-passion">Web Devloper</div>
+                    </div>
+                </div>
+            </div>
+            
         </div>
+    </div>
     </div>
 
     <div class="dots-wrapper" style="display: none;">
@@ -710,7 +739,8 @@
     <!-- logo slider end -->
 
     <!--Testimonial Section-->
-    <div class="slider">
+    <div class="slider ">
+        <div class="container">
         <div class="slide_viewer">
             <div style="display: flex; justify-content: center; margin: 50px 0;">
                 <h3 style="font-size: 35px;">What People Say </h3>
@@ -779,6 +809,7 @@
                 </div>
             </div>
         </div>
+    </div>
     </div><!-- End // .slider -->
 
     <div class="slide_buttons">
@@ -818,16 +849,16 @@
     <br><br>
     <!-- News Letter Here -->
     <div class="newsletter">
-
         <div class="container">
-            <div class="container2">
+            <div class="container2 newsletter-inside">
                 <div>
-                    <h2 style="color: var(--white); font-size: 35px;">Subscribe Our Newslatter</h2>
+                    <h2 style="color: var(--white); font-size: 35px;" class="title">Subscribe Our Newslatter</h2>
                 </div><br>
                 <div class="content1">
-                    <form class="subscription">
-                        <input class="add-email" type="email" placeholder="subscribe@me.now">
-                        <button class="submit-email" type="button">
+
+                    <form class="subscription" method="post" id="newsletter-form">
+                        <input class="add-email form-control" type="email" placeholder="subscribe@me.now" id="newsletter-email-input">
+                        <button class=" subcribe submit-email" type="button">
                             <span class="before-submit">Subscribe</span>
                             <span class="after-submit">Thank you for subscribing!</span>
                         </button>

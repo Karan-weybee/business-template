@@ -1,4 +1,4 @@
-.newsletter button.subcribe:hover,
+
 .updates-content:after {
     background-color: #F1D1A7
 }
@@ -10,12 +10,12 @@
     gap: 10px
 }
 
-#NewsLetterFormResponse,
+/* #NewsLetterFormResponse,
 .counter .count-up .counter-text,
 .newsletter button.subcribe {
     font-family: var(--primary-font);
     letter-spacing: 1px
-}
+} */
 
 #NewsLetterFormResponse {
     text-align: center;
@@ -50,7 +50,7 @@
     background-color:rgba(34, 34, 34, 0.2);
 } */
 
-.newsletter-inside {
+/* .newsletter-inside {
     display: flex;
     flex-wrap: wrap;
     align-items: center
@@ -61,21 +61,21 @@
     justify-content: center;
     position: relative;
 
-}
+} */
 
-.newsletter-inside .title {
+/* .newsletter-inside .title {
     color: var(--white);
-    width: 40%;
+    width: 40%; */
     /* margin-bottom: 50px; */
-    font-size: 30px;
+    /* font-size: 30px;
     letter-spacing: 1px;
-}
+} */
 
-.newsletter-inside form {
+/* .newsletter-inside form {
     width: 60%
-}
+} */
 
-.newsletter .form-row .form-control {
+/* .newsletter .form-row .form-control {
     font-size: 19px;
     border: 1px solid var(--white);
     font-family: var(--second-font);
@@ -85,13 +85,13 @@
     color: var(--white);
     width: 61%;
     border-radius: 0
-}
+} */
 
-.newsletter .form-row .form-control::placeholder {
+/* .newsletter .form-row .form-control::placeholder {
     color: #999
-}
+} */
 
-.newsletter button.subcribe {
+/* .newsletter button.subcribe {
     font-size: 18px;
     cursor: pointer;
     transition: .5s;
@@ -102,12 +102,12 @@
     outline: 0;
     width: 200px;
     height: 56px
-}
+} */
 
-.newsletter button.subcribe:hover {
+/* .newsletter button.subcribe:hover {
     background-color: red;
     color: var(--white)
-}
+} */
 
 #NewsLetterFormResponse {
     text-align: center;
@@ -124,11 +124,11 @@
     color: #e60303
 }
 
-.newsletter-inside {
+/* .newsletter-inside {
     display: flex;
     flex-wrap: wrap;
     align-items: center;
-}
+} */
 
 .newsletter .container {
     max-width: 1170px;
@@ -157,16 +157,16 @@
     }
 }
 
-#NewsLetterFormResponse,
+/* #NewsLetterFormResponse,
 .counter .count-up .counter-text,
 .newsletter button.subcribe {
     font-family: var(--primary-font);
     letter-spacing: 1px
-}
+} */
 
 @media only screen and (max-width:768px) {
 
-    .newsletter .form-row .form-control,
+    /* .newsletter .form-row .form-control, */
     .slider-content .decs,
     .slider-content .title {
         width: 90%
@@ -179,7 +179,7 @@
 
 @media only screen and (max-width:600px) {
 
-    .newsletter .form-row .form-control,
+    /* .newsletter .form-row .form-control, */
     .slider-content .decs,
     .slider-content .title {
         width: 90%

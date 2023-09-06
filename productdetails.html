@@ -409,15 +409,15 @@
     <!-- Site Banner Section End-->
     <br>
     <!-- about section  -->
-    <div class="about-us spad">
+    <div class="about-us spad products-details">
         <div class="container">
-            <div class="about-us-inside">
-                <div class="about-us-img">
+            <div class="about-us-inside products-detials-inside">
+                <div class="about-us-img products-detials-image products-details-items">
                     <img src="images/Blogimg.webp" srcset="images/blog.webp 480w, images/blog.webp 800w"
                         sizes="(max-width: 600px) 480px, 800px" alt="Social-Parsh" width="540px" height="360px"
                         alt="Social-Parsh" itemprop="image">
                 </div>
-                <div class="about-us-content">
+                <div class="about-us-content products-details-content products-details-items">
                     <div class="title">
                         <h1> Welcome to Lorem Ipsum Dolor Sit Armt</h1>
                     </div>
@@ -430,8 +430,8 @@
                             tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
                             quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
                             consequat.</p><br>
-                        <h2 style="font-size: 28px;"><del>$1599</del> <span style="color: green; margin-left: 1em;">$400</span></h2> 
-                        <button class="buynow">Buy Now</button>
+                        <h2 style="font-size: 28px;"><del>$1599</del> <span style="color: green; margin-left: 1em;"  class="products-price">$400</span></h2> 
+                        <button class="buynow products-btn">Buy Now</button>
                     </div>
                 </div>
             </div>
@@ -441,18 +441,18 @@
 
 
   <br><br>
-    <!-- News Letter Here -->
-    <div class="newsletter">
-
+       <!-- News Letter Here -->
+       <div class="newsletter">
         <div class="container">
-            <div class="container2">
+            <div class="container2 newsletter-inside">
                 <div>
-                    <h2 style="color: var(--white); font-size: 35px;">Subscribe Our Newslatter</h2>
+                    <h2 style="color: var(--white); font-size: 35px;" class="title">Subscribe Our Newslatter</h2>
                 </div><br>
                 <div class="content1">
-                    <form class="subscription">
-                        <input class="add-email" type="email" placeholder="subscribe@me.now">
-                        <button class="submit-email" type="button">
+
+                    <form class="subscription" method="post" id="newsletter-form">
+                        <input class="add-email form-control" type="email" placeholder="subscribe@me.now" id="newsletter-email-input">
+                        <button class=" subcribe submit-email" type="button">
                             <span class="before-submit">Subscribe</span>
                             <span class="after-submit">Thank you for subscribing!</span>
                         </button>
