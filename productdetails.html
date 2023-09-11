@@ -64,6 +64,10 @@
     <link rel="stylesheet" href="reveal.css">
     <script type="module" src="reveal-animation.js"></script>
     <style>
+         .main-footer{
+            background-color: var(--bgcolor);
+            color: var(--primary-color);
+        }
         .footer-items .title {
             color: var(--primary-color);
         }
@@ -453,7 +457,7 @@
                     <form class="subscription" method="post" id="newsletter-form">
                         <input class="add-email form-control" type="email" placeholder="subscribe@me.now" id="newsletter-email-input">
                         <button class=" subcribe submit-email" type="button">
-                            <span class="before-submit">Subscribe</span>
+                            <span class="before-submit subcribe" name="subcribe">Subscribe</span>
                             <span class="after-submit">Thank you for subscribing!</span>
                         </button>
                     </form>
@@ -464,7 +468,7 @@
     <!-- News Letter End -->
 
      <!-- Main Footer Here-->
-     <footer class="main-footer reveal" style="background-color: var(--bgcolor);color: var(--primary-color);">
+     <footer class="main-footer reveal">
         <div class="container">
             <div class="footer-inside">
                 <div class="footer-items">

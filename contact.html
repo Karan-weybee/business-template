@@ -64,6 +64,10 @@
     <link rel="stylesheet" href="reveal.css">
     <script type="module" src="reveal-animation.js"></script>
     <style>
+         .main-footer{
+            background-color: var(--bgcolor);
+            color: var(--primary-color);
+        }
         .footer-items .title {
             color: var(--primary-color);
         }
@@ -1031,10 +1035,10 @@
     <!-- Site Banner Section End-->
     <br>
     <!-- about section  -->
-    <div class="about-us spad">
+    <div class="about-us spad contact-custom">
         <div class="container">
-            <div class="about-us-inside">
-                <div class="about-us-content">
+            <div class="about-us-inside contact-custom-inside">
+                <div class="about-us-content contact-custom-item">
                     <div class="title">
                         <h1> Welcome to Lorem Ipsum Dolor Sit Armt</h1>
                     </div>
@@ -1050,7 +1054,7 @@
 
                     </div>
                 </div>
-                <div class="about-us-img">
+                <div class="about-us-img contact-custom-item">
                     <img src="images/About-us.webp" srcset="images/About-us.webp 480w, images/About-us.webp 800w"
                         sizes="(max-width: 600px) 480px, 800px" alt="Social-Parsh" width="540px" height="360px"
                         alt="Social-Parsh" itemprop="image">
@@ -1153,19 +1157,20 @@
                     </div>
                     <div class="right-side">
                         <div class="card-details">
-                            <div class="input-group">
-                                <div class="input reveal"> <input type="text" required="required"> <span>First Name</span>
+                            <form method="post" id="demo-form">
+                            <div class="input-group form-inside">
+                                <div class="input reveal form-items"> <input type="text" required="required"  name="first-name"> <span>First Name</span>
                                 </div>
-                                <div class="input reveal"> <input type="text" required="required"> <span>Last Name</span>
-                                </div>
-                            </div>
-                            <div class="input-group">
-                                <div class="input reveal"> <input type="text" required="required"> <span>E-mail</span> </div>
-                                <div class="input reveal"> <input type="text" required="required"> <span>Phone no.</span>
+                                <div class="input reveal form-items"> <input type="text" required="required" name="Email"> <span>Email</span>
                                 </div>
                             </div>
-                            <div class="button3 reveal"> <button>Send Message</button> </div>
-
+                            <div class="input-group form-inside">
+                                <div class="input reveal form-items"> <input type="text" required="required" name="number"> <span>Phone no.</span> </div>
+                                <div class="input reveal form-items"> <input type="text" required="required" name="message"> <span>Message</span>
+                                </div>
+                            </div>
+                            <div class="button3 reveal"> <button type="submit" class="btn" name="submit">Send Message</button> </div>
+                        </form>
                         </div>
                     </div>
                 </div>
@@ -1185,8 +1190,8 @@
                     <form class="subscription" method="post" id="newsletter-form">
                         <input class="add-email form-control" type="email" placeholder="subscribe@me.now" id="newsletter-email-input">
                         <button class=" subcribe submit-email" type="button">
-                            <span class="before-submit">Subscribe</span>
-                            <span class="after-submit">Thank you for subscribing!</span>
+                            <span class="before-submit subcribe" name="subcribe">Subscribe</span>
+                             <span class="after-submit">Thank you for subscribing!</span>
                         </button>
                     </form>
                 </div>
@@ -1195,7 +1200,7 @@
     </div>
     <!-- News Letter End -->
      <!-- Main Footer Here-->
-     <footer class="main-footer reveal" style="background-color: var(--bgcolor);color: var(--primary-color);">
+     <footer class="main-footer reveal">
         <div class="container">
             <div class="footer-inside">
                 <div class="footer-items">
