@@ -27,8 +27,8 @@
     /* position: sticky; */
     position: fixed;
     z-index: 2;
-    /* display: flex;
-    justify-content: space-evenly; */
+    display: flex;
+    justify-content: space-between;
   }
   .logo{
     width: 115px;
@@ -40,8 +40,9 @@
   }
   ul {
     float: left;
-    margin-left: 15%;
+    /* margin-left: 15%; */
     margin-top: .45em;
+    display: flex;
   }
   
   .socialtop {
