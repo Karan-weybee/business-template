@@ -30,6 +30,7 @@
     background-color: var(--bgcolor);
     height: 100%;
     margin: 1px;
+    font-family: var(--primary-font);
 }
 
 .updates-content {

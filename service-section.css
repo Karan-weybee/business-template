@@ -1,6 +1,10 @@
 .container h2{
     margin-top: 30px;
-    font-size: 28px;
+    font-size: 30px;
+}
+.our-serivces .container{
+  margin-top: 3.5em;
+  font-family: var(--primary-font);
 }
 .services-btn a{
     text-decoration: none;

@@ -185,8 +185,8 @@
         /* testimonial  */
 
         .slider {
-            margin: 50px auto;
-            max-width: 940px;
+            margin: 0 auto;
+            /* max-width: 940px; */
         }
 
         .slide_viewer {
@@ -253,6 +253,7 @@
             left: 0;
             position: absolute;
             right: 0;
+            margin-top: 1em;
             text-align: center;
         }
 
@@ -363,6 +364,7 @@
     align-items: center;
     display: flex;
     justify-content: center;
+    font-family: var(--primary-font);
 }
 .testimonial_section .container {
     max-width: 1170px;
@@ -397,11 +399,11 @@
             <li><a href='about-us.html'>About Us</a></li>
             <li><a href='#'>Products</a>
                 <div class="dropdown-menu">
-                    <a class="dropdown-item" href="productdetails.html">lorem ipsum Dolor</a>
-                    <a class="dropdown-item" href="productdetails.html">lorem ipsum Dolor</a>
-                    <a class="dropdown-item" href="productdetails.html">lorem ipsum Dolor</a>
-                    <a class="dropdown-item" href="productdetails.html">lorem ipsum Dolor</a>
-                    <a class="dropdown-item" href="productdetails.html">lorem ipsum Dolor</a>
+                    <a class="dropdown-item" href="productdetails.html">lorem ipsum</a>
+                    <a class="dropdown-item" href="productdetails.html">lorem ipsum</a>
+                    <a class="dropdown-item" href="productdetails.html">lorem ipsum</a>
+                    <a class="dropdown-item" href="productdetails.html">lorem ipsum</a>
+                    <a class="dropdown-item" href="productdetails.html">lorem ipsum</a>
                 </div>
                 <label id="toggle1" class="dropdown-toggle">
                     <img src="images/dropdown.webp" alt="Social sparsh">
@@ -564,7 +566,7 @@
     <!-- About Section-->
 
     <!-- vision section  -->
-    <div class="vision-mission reveal" style="background-color: var(--dark); color: var(--white);">
+    <div class="vision-mission reveal" style="background-color: var(--dark); color: var(--white); opacity: .9;">
         <div class="about-us spad">
             <div class="container">
                 <div class="about-us-inside vision-mission-inside">
@@ -1091,7 +1093,7 @@
         var v = 0;
         function myFunction() {
             w = window.innerWidth;
-            if (v == 0 && w <= 932) {
+            if (v == 0 && w <= 1067) {
                 $('.dropdown-menu').removeClass('show');
             }
         }
@@ -1099,7 +1101,7 @@
         $('.toggle svg').click(function () {
             $('ul').toggleClass("show");
             v = v == 0 ? 1 : 0;
-            if (v == 0 && w <= 932) {
+            if (v == 0 && w <= 1067) {
                 $('.dropdown-menu').removeClass('show');
             }
             $('.socialtop').toggleClass("show");

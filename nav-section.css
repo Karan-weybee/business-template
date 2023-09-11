@@ -27,8 +27,8 @@
     /* position: sticky; */
     position: fixed;
     z-index: 2;
-    display: flex;
-    justify-content: space-between;
+    /* display: flex;
+    justify-content: space-between; */
   }
   .logo{
     width: 115px;
@@ -40,9 +40,9 @@
   }
   ul {
     float: left;
-    /* margin-left: 15%; */
+    margin-left: 15%;
     margin-top: .45em;
-    display: flex;
+    /* display: flex; */
   }
   
   .socialtop {
@@ -61,11 +61,13 @@
   }
   
   ul a {
-    font-weight: 400;
+    font-weight: 350;
     padding: 15px;
     line-height: 45px;
     color: #fff;
     text-decoration: none;
+    text-transform: uppercase;
+    font-family: var(--primary-font);
   }
   
   
@@ -130,7 +132,7 @@
   top: 60px;
 }
 
-@media screen and (max-width: 931px) {
+@media screen and (max-width: 1067px) {
   .dropdown-menu.show{
     top: 180px;
   }
@@ -211,7 +213,7 @@
   } 
                                                    
 
-  @media (min-width: 932px) and (max-width: 1327px) {
+  @media (min-width: 1067px) and (max-width: 1567px) {
 
     .toggle {
         display: block;

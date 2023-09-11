@@ -24,6 +24,11 @@
 }
 .about-us-content .title{
     margin-top: 0%;
+    font-family: var(--primary-font);
+    text-transform: uppercase;
+}
+.about-us-content{
+    font-family: var(--primary-font);
 }
 .about-us-content,
     .about-us-img {

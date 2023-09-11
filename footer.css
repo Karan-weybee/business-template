@@ -10,6 +10,7 @@
     padding: 0 15px;
     animation-name: footers;
     animation-duration: 3s;
+    font-family: var(--primary-font);
 }
 
 @keyframes footers {

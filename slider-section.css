@@ -26,6 +26,7 @@
 }
 .slider-content .title,.slider-content p{
     color: var(--bgcolor);
+    font-family: var(--primary-font);
 }
 .slider-content {
     overflow: hidden;
@@ -41,6 +42,7 @@
 .slide .title {
     font-size: 3em;
     line-height: 1.5em;
+    font-family: var(--primary-font);
 }
 
 .slide p {

@@ -14,12 +14,15 @@
         margin: 0 auto;
         padding: 0 15px;
         animation: none;
+        margin-top: -2.5em;
+        font-family: var(--primary-font);
     }
 
     .counter .title {
         color: var(--white);
         margin-bottom: 50px;
         font-size: 30px;
+        
     }
 
     .counter .counter-inside {
