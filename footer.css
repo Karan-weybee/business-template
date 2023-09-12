@@ -71,6 +71,7 @@
     margin-top: 15px;
     float: left;
     margin-left: 0%;
+    flex-wrap: wrap;
 }
 
 
@@ -146,7 +147,7 @@
     display: flex;
     margin: 15px 0;
     width: 100%;
-    gap: 0 15px
+    /* gap: 0 15px */
 }
 
 .contact-info .contact-items a {

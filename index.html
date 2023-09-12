@@ -1318,6 +1318,8 @@ button.share-btn {
 }
 .contact-decs a{
     text-decoration: none;
+    display: flex;
+    flex-wrap: wrap;
 }
 .footer-inside {
 
@@ -1365,6 +1367,7 @@ button.share-btn {
     margin-top: 15px;
     float: left;
     margin-left: 0%;
+    flex-wrap: wrap;
 }
 
 
@@ -1440,7 +1443,7 @@ button.share-btn {
     display: flex;
     margin: 15px 0;
     width: 100%;
-    gap: 0 15px
+    /* gap: 0 15px */
 }
 
 .contact-info .contact-items a {
@@ -1635,6 +1638,8 @@ contact-info .contact-items span {
         .contact-decs {
             font-size: 18px;
             margin: 10px 0 0 10px;
+            overflow: hidden;
+            text-overflow: ellipsis;
 
         }
 
@@ -1972,7 +1977,7 @@ contact-info .contact-items span {
                                         </svg>
                                     </div>
                                     <div class="contact-decs">
-                                        <a href="tel:{{MobileNumber}}" itemprop="telephone">{{MobileNumber}}</a>
+                                        <a href="tel:{{MobileNumber}}" itemprop="telephone">+91 7880789089</a>
                                     </div>
                                 </div>
                                 <div class="email reveal">
@@ -1988,7 +1993,7 @@ contact-info .contact-items span {
                                         </svg>
                                     </div>
                                     <div class="contact-decs">
-                                        <a href="mailto:{{Email}}" itemprop="email">{{Email}}</a>
+                                        <a href="mailto:{{Email}}" itemprop="email">your@gmail.com</a>
                                     </div>
                                 </div>
                             </div>
@@ -2635,7 +2640,7 @@ contact-info .contact-items span {
                                 </svg>
                             </div>
                             <div class="contact-decs reveal">
-                                <a href="mailto:your@mail.com" itemprop="email">your@mail.com</a>
+                                <a href="mailto:your@mail.com" itemprop="email">your@gmail.com</a>
                             </div>
                         </div>
                         <div class="contact-items reveal" itemscope="">
