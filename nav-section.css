@@ -132,7 +132,7 @@
   top: 60px;
 }
 
-@media screen and (max-width: 1067px) {
+@media screen and (max-width: 1401px) {
   .dropdown-menu.show{
     top: 180px;
   }
@@ -213,7 +213,7 @@
   } 
                                                    
 
-  @media (min-width: 1067px) and (max-width: 1567px) {
+  @media (min-width: 1401px) and (max-width: 1567px) {
 
     .toggle {
         display: block;
