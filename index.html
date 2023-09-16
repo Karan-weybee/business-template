@@ -1260,7 +1260,7 @@ button.share-btn {
     z-index: -1;
     background-color: #333;
     display: flex;
-    
+    /* justify-content: center; */
     overflow-x: scroll;
     white-space: nowrap;
     padding: 10px;
@@ -1273,7 +1273,7 @@ button.share-btn {
     z-index: 0;
     transition: 0.5s ease-out;
     background-position: 0 0;
-    animation: moveSlideshow 5s linear infinite;
+    animation: moveSlideshow 3s linear infinite;
   }
   .logo-slider .title{
     font-size: 22px;
@@ -1286,7 +1286,7 @@ button.share-btn {
  }
  @keyframes moveSlideshow {
   100% { 
-    transform: translateX(-80.6666%);  
+    transform: translateX(-20.6666%);  
   }
 }
  
@@ -2456,6 +2456,7 @@ contact-info .contact-items span {
     <br>
     <!--Logo Slider sections-->
     <div class="logo-slider spad">
+        <div class="container">
         <div class="title">
             <h2>Our Brand Basket</h2>
         </div>
@@ -2495,11 +2496,12 @@ contact-info .contact-items span {
                     </div>
                 <div class="logo-slider-items"><img src="images/gallery.webp" alt="logo slider"
                         style="width: 250px; height: 250px; object-fit: cover;" loading="lazy">
-                       <div class="logo-tag" style="text-align: center;  font-family: var(--primary-font);">Product1</div>
+                       <div class="logo-tag" style="text-align: center;  font-family: var(--primary-font);">Product9</div>
                     </div>
 
             </div>
         </div>
+    </div>
     </div>
     <br><br>
 
