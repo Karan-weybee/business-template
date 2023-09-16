@@ -180,7 +180,7 @@
     /* display: flex; */
   }
   
-  .socialtop {
+  .top-header-inside {
     float: right;
     margin-right: 2%;
     margin-top: 0.5em;
@@ -216,18 +216,18 @@
     color: #fff;
   }
   
-  .top-social a {
+  .top-social1 a {
     color: #fff;
     padding: 15px 13px 13px 13px;
     
     /* border: 1px solid pink; */
   }
   
-  .top-social {
+  .top-social1 {
     padding: 10px 15px;
   }
   
-  .top-social a:hover {
+  .top-social1 a:hover {
     color: var(--nav-hover-color);
   }
   svg {
@@ -298,7 +298,7 @@
       display: block;
       margin-top: 0.25em;
     }
-    .socialtop{
+    .top-header-inside{
         
       z-index: 0;
       margin-top: -15px;
@@ -330,17 +330,17 @@
     .activity.show{
       top: 60px;
     }
-    .socialtop.show{
+    .top-header-inside.show{
        top: 320px;
     }
     
-    .activity li, .top-social{
+    .activity li, .top-social1{
       top: 0;
       width: 100%;
       float: right;
       text-align: center;
     }
-    .activity, .socialtop{
+    .activity, .top-header-inside{
         width: 100%;
       }
 
@@ -362,7 +362,7 @@
        
         
       }
-    .socialtop{
+    .top-header-inside{
         /* display: none; */
         /* float: none; */
         
@@ -378,18 +378,18 @@
       transition: top .4s;
       margin-left: 0;
     }
-    .socialtop.show{
+    .top-header-inside.show{
         top: 60px;
         /* margin-right: 0%; */
         
      }
-     .top-social a{
+     .top-social1 a{
         top: 0;
         width: 100%;
         float: right;
         text-align: center;
       }
-    .socialtop{
+    .top-header-inside{
           width: 8%;
           margin-left: 90%;
           margin-right: 2%;
@@ -1805,8 +1805,8 @@ contact-info .contact-items span {
             <li class="nav-item"><a  class="nav-link" href='gallery.html'>Gallery</a></li>
             <li class="nav-item"><a  class="nav-link" href='contact.html'>Contact Us</a></li>
         </ul>
-        <div class="socialtop">
-            <div class='top-social'>
+        <div class="top-header-inside">
+            <div class='top-social1'>
 
                 <a href='{{Facebook}}'><svg xmlns="http://www.w3.org/2000/svg" id="Layer_1" enable-background="new 0 0 100 100"
                         viewBox="0 0 100 100" aria-label="facebook" rel="noreferrer"
@@ -2790,25 +2790,18 @@ contact-info .contact-items span {
     <!-- <script src="counter-section.js"></script> -->
     <script>
         let counter = 0;
-let a = Number(document.getElementById('count1').textContent);
-let b = Number(document.getElementById('count2').textContent);
-let c = Number(document.getElementById('count3').textContent);
-let d = Number(document.getElementById('count4').textContent);
+let counterVal= document.querySelectorAll('.counter-count');
+let arrCount=[];
+for (let i=0;i<counterVal.length;i++){
+    arrCount.push(Number(counterVal[i].textContent))
+}
 function counterValue() {
     counter++;
-    if (counter <= a) { document.getElementById('count1').innerHTML = counter }
-    if (counter <= b) {
-        document.getElementById('count2').innerHTML = counter
-    }
-    if (counter <= c) {
-        document.getElementById('count3').innerHTML = counter
-    }
-    if (counter <= d) {
-
-        document.getElementById('count4').innerHTML = counter
-    }
-    else {
-        return;
+    // if (counter <= a) { document.getElementById('count1').innerHTML = counter }
+    for(let i=0;i<arrCount.length;i++){
+        if(counter<=arrCount[i]){
+            counterVal[i].innerHTML=counter;
+        }
     }
 }
 setInterval(counterValue, .00001);
@@ -2879,7 +2872,7 @@ setInterval(nextSlide,2000)
             if (v == 0 && w <= 1401) {
                 $('.dropdown-menu').removeClass('show');
             }
-            $('.socialtop').toggleClass("show");
+            $('.top-header-inside').toggleClass("show");
         });
     </script>
     <script>
