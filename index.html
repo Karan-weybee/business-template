@@ -152,6 +152,16 @@
         }
 
 
+        .toggle svg{
+            cursor: pointer;
+    /* background-color: white; */
+    /* transform: rotate(90deg); */
+    fill: var(--white);
+    width: 44px;
+    margin-top: 16px;
+    height: 31px;
+    padding: 0.1px 3.5px;
+        }
         .toggle {
             font-size: 30px;
             color: var(--white);
@@ -167,36 +177,38 @@
         nav {
             background: var(--primary-color);
             /* height: 47px; */
-            height: 57px;
+            height: 76px;
             width: 100%;
             font-family: sans-serif;
             /* position: sticky; */
             position: fixed;
             z-index: 2;
+            opacity: .96;
             /* display: flex;
     justify-content: space-between; */
         }
 
         .logo {
-            width: 115px;
-            height: 31px;
-            margin-top: .8em;
-            margin-left: .8em;
+            /* width: 115px; */
+            width: auto;
+            height: 70px;
+            margin-top: .35em;
+            margin-left: .4em;
             padding: 2px;
-            background-color: var(--white);
+            /* background-color: var(--white); */
         }
 
         ul {
             float: left;
             margin-left: 14%;
-            margin-top: .45em;
+            margin-top: 1.15em;
             /* display: flex; */
         }
 
         .top-header-inside {
             float: right;
             margin-right: 2%;
-            margin-top: 0.5em;
+            margin-top: 1.15em;
             /* display: block; */
         }
 
@@ -205,7 +217,7 @@
             padding: 0;
             position: relative;
             display: inline-block;
-            font-size: 16px;
+            font-size: 21px;
         }
 
         ul a {
@@ -255,8 +267,8 @@
         }
 
         .dropdown-toggle img {
-            width: 20px;
-            height: 11px;
+            width: 30px;
+            height: 18px;
             color: var(--white);
             background: var(--white);
             padding: 1px;
@@ -281,12 +293,12 @@
         }
 
         .dropdown-menu.show {
-            top: 60px;
+            top: 100px;
         }
 
-        @media screen and (max-width: 1401px) {
+        @media screen and (max-width: 1495px) {
             .dropdown-menu.show {
-                top: 180px;
+                top: 208px;
             }
 
             .dropdown-menu {
@@ -351,11 +363,11 @@
             }
 
             .activity.show {
-                top: 60px;
+                top: 87px;
             }
 
             .top-header-inside.show {
-                top: 320px;
+                top: 355px;
             }
 
             .activity li,
@@ -375,7 +387,7 @@
         }
 
 
-        @media (min-width: 1401px) and (max-width: 1567px) {
+        @media (min-width: 1495px) and (max-width: 1921px) {
 
             .toggle {
                 display: block;
@@ -409,7 +421,7 @@
             }
 
             .top-header-inside.show {
-                top: 60px;
+                top: 87px;
                 /* margin-right: 0%; */
 
             }
@@ -1894,7 +1906,7 @@
     <nav>
         <a href="index.html">
             <ul for="" class="logo">
-                <li><img src="images/logo.webp" alt="{{SiteTitle}}" style="width: 113px; height: 23px;"></li>
+                <li><img src="images/logo.webp" alt="{{SiteTitle}}" style="width: 113px; height: 62px; background-color: var(--white);"></li>
             </ul>
         </a>
         <ul class="activity navbar-nav">
@@ -2853,7 +2865,7 @@
             <div class="footer-inside">
                 <div class="footer-items">
                     <div class="footer-logo reveal">
-                        <img src="images/logo.webp" width="111px" height="23px" alt="logo" itemprop="image"
+                        <img src="images/logo.webp"  alt="logo" itemprop="image" style="width: 113px; height: 62px;"
                             loading="lazy">
                     </div>
                     <p class="decs reveal">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
@@ -3136,7 +3148,7 @@
         var v = 0;
         function myFunction() {
             w = window.innerWidth;
-            if (v == 0 && w <= 1401) {
+            if (v == 0 && w <= 1495) {
                 $('.dropdown-menu').removeClass('show');
             }
         }
@@ -3144,7 +3156,7 @@
         $('.toggle svg').click(function () {
             $('ul').toggleClass("show");
             v = v == 0 ? 1 : 0;
-            if (v == 0 && w <= 1401) {
+            if (v == 0 && w <= 1495) {
                 $('.dropdown-menu').removeClass('show');
             }
             $('.top-header-inside').toggleClass("show");
